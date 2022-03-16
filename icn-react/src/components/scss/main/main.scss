@@ -1,0 +1,113 @@
+@import 'commons/scss/var.scss';
+
+main.webMainBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52rem;
+  padding: $web-inline-padding;
+  background-color: $point-blue-color;
+
+  .mainBannerLeft {
+    max-width: 42rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .bannerText {
+      header {
+        margin-bottom: 1.6rem;
+        color: white;
+        font-size: 4.8rem;
+        font-weight: $bold-font-weight;
+
+        mark {
+          position: relative;
+          background-color: transparent;
+          color: white;
+
+          &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-image: url('../../../commons/images/green-line.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left bottom;
+            z-index: 1;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 2.4rem;
+        color: white;
+      }
+    }
+
+    &>a {
+      @include whiteButton();
+    }
+  }
+}
+
+.mobileMainBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 16rem;
+  padding: $mobile-inline-padding;
+  background-color: $point-blue-color;
+  border-radius: 0 0 2.4rem 2.4rem;
+
+  .mainLeft {
+    max-width: 20rem;
+    color: white;
+
+    header {
+      margin-bottom: 0.4rem;
+      font-size: 2.4rem;
+      font-weight: $bold-font-weight;
+    }
+
+    p {
+      color: $light-blue-color;
+    }
+  }
+
+  .mainRight {
+    display: flex;
+
+    .alertIcon{
+      position: relative;
+      display: inline-block;
+      width: 1.6rem;
+      height: 1.6rem;
+
+      img {
+        width: 100%;
+      }
+
+      .alertOn {
+        position: absolute;
+        right: -0.2rem;
+        top: -0.2rem;
+        display: block;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        background-color: $alert-red-color;
+      }
+    }
+
+    figure {
+      @include imageAlignCenter();
+      width: 4rem;
+      height: 4rem;
+      margin-left: 2rem;
+      border-radius: 50%;
+    }  
+  }
+  
+}
