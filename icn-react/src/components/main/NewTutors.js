@@ -5,8 +5,8 @@ import tutors from 'components/items/tutor-item/tutors.json';
 import { useEffect, useState } from "react";
 
 export const NewTutors = (props) => {
-  const [businessOn, setBusinessOn] = useState('');
-  const [educationOn, setEducationOn] = useState('');
+  // const [businessOn, setBusinessOn] = useState('');
+  // const [educationOn, setEducationOn] = useState('');
 
   // slick Options
   var settings = {
@@ -17,8 +17,6 @@ export const NewTutors = (props) => {
     slidesToScroll: 4,
     arrows: false
   };
-
-  
 
   const tutorList = tutors.map((tutor, index) => {
     
@@ -47,17 +45,7 @@ export const NewTutors = (props) => {
 
       for( let j = 0; j < tutors[i].tags; j++ ){
         console.log(tutors[i].tags[j]);
-
-        if(businessIs === true){
-
-          } else if(educationIs === true) {
-          }else{
-            setBusinessOn('')
-            setEducationOn('');
-        }
       }
-    
-
     }
   }, [tutors])
 

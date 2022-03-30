@@ -34,6 +34,8 @@ export const RecommendTutors =(props) => {
                   <div className="slickSlides" key={index}>
                     <TutorItem 
                       id={tutor.id}
+                      business={tutor.tags[0].name}
+                      education={tutor.tags[1].name}
                       profile={tutor.profile}
                       tutorName={tutor.tutorName}
                       university={tutor.university}

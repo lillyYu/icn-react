@@ -2,6 +2,7 @@
 
 .icnMain {
   section {
+
     // section common styling
     h2.sectionTitle {
       @include flexAlignCenter();
@@ -52,7 +53,7 @@
         color: $grey-font-color;
       }
 
-      a{
+      a {
         @include blueButton();
         margin-top: 3.2rem;
 
@@ -60,32 +61,38 @@
     }
 
     article {
-      .slick-slide {
-        margin-left:2.4rem;
-      }
-    
-      .slick-list {
-        margin-left:-2.4rem;
-      }
+      .slick-slider {
 
-      .slick-track {
-        display: flex;
-        width: 100%;
-      }
+        .slick-list {
+          margin-left: -2.4rem;
 
-      .slick-dots {
-        bottom: -5rem;
+          .slick-track {
+            display: flex;
+            width: 100%;
 
-        li {
-          button:before{
-            color: #D4DDEB;
+            .slick-slide {
+              margin-left: 2.4rem;
+            }
           }
-          &.slick-active button:before{
-            color: $point-blue-color;
-          }
+        }
 
+        .slick-dots {
+          bottom: -5rem;
+
+          li {
+            button:before {
+              color: #D4DDEB;
+            }
+
+            &.slick-active button:before {
+              color: $point-blue-color;
+            }
+
+          }
         }
       }
+
+
     }
 
     // Section 1. New Contents
@@ -105,7 +112,7 @@
     &.newTutor {
       padding: 10rem 10%;
       background-color: $light-blue-color;
-      
+
       article {
         width: 100%;
       }
@@ -119,7 +126,7 @@
     }
 
     // Section 4 : Recommend Tutors
-    &.recommendTutors{
+    &.recommendTutors {
       padding: 0 5%;
 
       .bgWrap {
