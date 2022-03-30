@@ -29,13 +29,12 @@ export const RecommendTutors =(props) => {
         <article>
           <Slider {...settings} className="slickSlider">
             {
-              tutors.map((tutor) => {
+              tutors.map((tutor, index) => {
                 return(
-                  <div className="slickSlides">
+                  <div className="slickSlides" key={index}>
                     <TutorItem 
                       id={tutor.id}
                       profile={tutor.profile}
-                      tags={tutor.tags}
                       tutorName={tutor.tutorName}
                       university={tutor.university}
                       rate={tutor.rate}

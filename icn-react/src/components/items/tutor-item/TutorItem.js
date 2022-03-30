@@ -2,8 +2,8 @@ import 'components/scss/items/tutor-item.scss';
 
 export const TutorItem = (props) => {
   const starProportion = props.rate * 21;
+  console.log(props)
   
-  console.log(starProportion);
   return(
     <div className="tutorItem">
       <figure>
@@ -12,7 +12,8 @@ export const TutorItem = (props) => {
 
       <div className="infoWrap">
         <ul className="tags">
-          <li className={props.tags}>{props.tags}</li>
+          <li className={props.business}>{props.business}</li>
+          <li className={props.education}>{props.education}</li>
         </ul>
 
         <header>{props.tutorName}</header>

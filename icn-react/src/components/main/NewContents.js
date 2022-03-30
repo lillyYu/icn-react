@@ -16,17 +16,19 @@ export const NewContents = (props) => {
 
       <article>
         {
-          contents.map((content) => {
+          contents.map((content, index) => {
             return(
-              <ContentItem 
-                id={content.id}
-                thumbnail={content.thumbnail}
-                tags={content.tags}
-                title={content.title}
-                profile={content.profile}
-                tutorName={content.tutorName}
-                university={content.university}
-              />
+              <div key={index}>
+                <ContentItem
+                  id={content.id}
+                  thumbnail={content.thumbnail}
+                  // tags={content.tags}
+                  title={content.title}
+                  profile={content.profile}
+                  tutorName={content.tutorName}
+                  university={content.university}
+                />
+              </div>
               )
             }
           )
