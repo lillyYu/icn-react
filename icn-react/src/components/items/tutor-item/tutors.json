@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "profile": "images/profile-sample1.jpg",
+    "tags": "business",
+    "tutorName": "Eric Vondemar",
+    "university": "University of Pennsylvania",
+    "rate": 4.8,
+    "rateNum" : 200
+  },
+  {
+    "id": 2,
+    "profile": "images/profile-sample2.jpg",
+    "tags": "education",
+    "tutorName": "Jamatha Angel",
+    "university": "University of Pennsylvania",
+    "rate": 4.2,
+    "rateNum" : 245
+  },
+  {
+    "id": 3,
+    "profile": "images/profile-sample3.jpg",
+    "tags": "business",
+    "tutorName": "David Jonathan",
+    "university": "University of Pennsylvania",
+    "rate": 3.5,
+    "rateNum" : 400
+  },
+  {
+    "id": 4,
+    "profile": "images/profile-sample4.jpg",
+    "tags": "business",
+    "tutorName": "Jessica Amada",
+    "university": "University of Pennsylvania",
+    "rate": 5.0,
+    "rateNum" : 245
+  },
+  {
+    "id": 5,
+    "profile": "images/profile-sample5.jpg",
+    "tags": "business",
+    "tutorName": "Jessica Amada",
+    "university": "University of Pennsylvania",
+    "rate": 2.3,
+    "rateNum" : 245
+  },
+  {
+    "id": 6,
+    "profile": "images/profile-sample6.jpg",
+    "tags": "business",
+    "tutorName": "Jessica Amada",
+    "university": "University of Pennsylvania",
+    "rate": 4.2,
+    "rateNum" : 245
+  },
+  {
+    "id": 7,
+    "profile": "images/profile-sample7.jpg",
+    "tags": "education",
+    "tutorName": "Jessica Amada",
+    "university": "University of Pennsylvania",
+    "rate": 3.1,
+    "rateNum" : 245
+  },
+  {
+    "id": 8,
+    "profile": "images/profile-sample8.jpg",
+    "tags": "business",
+    "tutorName": "Jessica Amada",
+    "university": "University of Pennsylvania",
+    "rate": 4.0,
+    "rateNum" : 245
+  }
+]
