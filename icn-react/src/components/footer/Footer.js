@@ -5,7 +5,7 @@ export const Footer = () => {
   return(
     <Desktop>
       <footer className="webFooter">
-
+        footer
       </footer>
     </Desktop>
   )
