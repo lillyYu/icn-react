@@ -4,10 +4,10 @@ import { SignUp } from "components/user/SignUp";
 import { Route, Routes } from "react-router-dom";
 
 import 'commons/scss/master.scss';
-import { WhatIs } from "components/subpages/whatIs/WhatIs";
-import { HowTo } from "components/subpages/howTo/HowTo";
-import { Review } from "components/subpages/review/Review";
-import { Class } from "components/subpages/class/Class";
+import { WhatIs } from "components/subpages/what-is/WhatIs";
+import { HowTo } from "components/subpages/how-to/HowTo";
+import { Review } from "components/subpages/reviews/Review";
+import { Class } from "components/subpages/classes/Class";
 import { Main } from "components/main/Main";
 
 // slick slider css

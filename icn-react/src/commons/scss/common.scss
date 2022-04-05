@@ -136,6 +136,13 @@
     font-weight: $medium-font-weight;
     font-size: 2rem;
     line-height: 2.8rem;
+
+    &.mainParagraph {
+      margin-top: 2.4rem;
+      margin-bottom: 0;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
   }
 
   header {
