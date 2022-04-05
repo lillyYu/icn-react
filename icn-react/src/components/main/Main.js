@@ -27,7 +27,7 @@ export const Main = () => {
                 </p>
               </div>
     
-              <Link to="/sign-up">Class register now!</Link>
+              <Link to="/sign-up" className="blueButton">Class register now!</Link>
             </div>
             <figure>
               <img src={mainBanner} alt="메인 배너 테스트"/>

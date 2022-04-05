@@ -20,7 +20,7 @@
         @include flexAlignCenter();
         font-weight: 500;
         font-size: $web-base-font-size;
-        line-height: 24px;
+        line-height: 2.4rem;
         color: $point-blue-color;
 
         span {
@@ -54,45 +54,8 @@
       }
 
       a {
-        @include blueButton();
         margin-top: 3.2rem;
-
       }
-    }
-
-    article {
-      .slick-slider {
-
-        .slick-list {
-          margin-left: -2.4rem;
-
-          .slick-track {
-            display: flex;
-            width: 100%;
-
-            .slick-slide {
-              margin-left: 2.4rem;
-            }
-          }
-        }
-
-        .slick-dots {
-          bottom: -5rem;
-
-          li {
-            button:before {
-              color: #D4DDEB;
-            }
-
-            &.slick-active button:before {
-              color: $point-blue-color;
-            }
-
-          }
-        }
-      }
-
-
     }
 
     // Section 1. New Contents

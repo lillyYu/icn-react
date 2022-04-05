@@ -8,14 +8,14 @@ export const Footer = () => {
       <footer className="webFooter">
         <div className="footerTop">
           <div className="footerLeft">
-            <p>Join our class &#38; <br />improve your skill</p>
+            <p>Join our class &amp; <br />improve your skill</p>
             <p>
               The best and lagest online tutoring application in Korea. 
             </p>
             <p>
               The most complete online learning solution
             </p>
-            <Link to='/sign-up'>Sign up now</Link>
+            <Link to='/sign-up' className="whiteButton">Sign up now</Link>
           </div>
 
           <div className="footerRight">
@@ -35,15 +35,15 @@ export const Footer = () => {
               </li>
 
               <li>
-                <p>
+                <section>
                   <span>Tutor</span>
                   <div>Become a tutor</div>
-                </p>
-                <p>
+                </section>
+                <section>
                   <span>Career</span>
                   <div>Internship</div>
                   <div>Career offer</div>
-                </p>
+                </section>
               </li>
               <li>
                 <span>FAQ</span>
@@ -57,10 +57,9 @@ export const Footer = () => {
           <header>ICN</header>
           <p>The most complete online learning solution</p>
           <div>
-            <span>Terms &#38; Conditions</span>
+            <span>Terms &amp; Conditions</span>
             <span>Privacy Policy</span>
           </div>
-
         </div>
       </footer>
     </Desktop>

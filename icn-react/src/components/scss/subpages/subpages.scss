@@ -1,0 +1,65 @@
+@import 'commons/scss/var.scss';
+
+.subpageStyling {
+  section {
+    h2.sectionTitle {
+      text-transform: capitalize;
+      margin-bottom: 4.4rem;
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 4rem;
+      color: $title-font-color;
+    }
+
+    &.blueBg {
+      background-color: $light-blue-color;
+    }
+  }
+
+  &.whatIs,
+  &.howTo {
+    section {
+      padding: 10rem 10%;
+    }
+  }
+
+  &.howTo {
+    .registerClassWrap {
+      article {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 10rem;
+
+        div {
+          header {
+            margin-bottom: 1.6rem;
+            font-weight: $bold-font-weight;
+            font-size: 4.4rem;
+            line-height: 5.2rem;
+            color: $point-blue-color;
+          }
+
+          p {
+            font-size: 2rem;
+            line-height: 2.8rem;
+          }
+        }
+      }
+
+      .divider {
+        height: 10rem;
+        &.left {
+          background: url('../../../commons/images/how-to-divider-left.png') no-repeat;
+          background-position: center;
+        }
+
+        &.right {
+          background: url('../../../commons/images/how-to-divider-right.png') no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+}

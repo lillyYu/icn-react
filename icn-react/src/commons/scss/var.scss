@@ -5,6 +5,10 @@ $mobile-base-font-size: 1.4rem;
 
 // colors
 $point-blue-color: #2A549D;
+$point-orange-color: #F2994A;
+$point-green-color: #27AE60;
+$point-red-color: #EB5757;
+
 $light-blue-color: #EFF3FB;
 $alert-red-color: #EB5757;
 $sky-blue-color: #C9DCFE;
@@ -28,6 +32,8 @@ $mobile-inline-padding : 0 5%;
 
 
 // --------------------------- mixins
+
+// buttons
 @mixin blueButton {
   display: inline-block;
   background-color: $point-blue-color;
@@ -50,6 +56,16 @@ $mobile-inline-padding : 0 5%;
   font-weight: $bold-font-weight;
 }
 
+@mixin lineButton {
+  background-color: white;
+  border: 1px solid $point-blue-color;
+  border-radius: 0.8rem;
+  padding: 1.4rem 2rem;
+  color: $point-blue-color;
+  font-weight: $medium-font-weight;
+}
+
+// aligns
 @mixin imageAlignCenter {
   position: relative;
   overflow: hidden;
@@ -68,6 +84,13 @@ $mobile-inline-padding : 0 5%;
   align-items: center;
 }
 
+@mixin alignCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// point stylings
 @mixin markPoint{
   position: relative;
   background-color: transparent;

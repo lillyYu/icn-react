@@ -16,7 +16,7 @@ export const ImproveSkill = () => {
           The most complete online learning solution
         </p>
 
-        <Link to="/">Class register now!</Link>
+        <Link to="/" className="blueButton">Class register now!</Link>
       </h3>
 
       <img src={spaceShip} alt="spaceship image" />
