@@ -21,7 +21,6 @@
     a {
       display: inline-block;
       margin: 0 1.6rem;
-      min-width: 9rem;
       transition: all 0.3s;
 
       &::after {
@@ -43,13 +42,11 @@
       &:hover {
         position: relative;
         color: $point-blue-color;
-        font-weight: $bold-font-weight;
         letter-spacing: 0;
 
         &::after {
           opacity: 1;
           bottom: -0.6rem;
-
         }
       }
     }
