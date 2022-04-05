@@ -13,13 +13,15 @@ export const Header = (children) => {
       <Desktop>
         <header className="webHeader">
           <div className="webHeaderWrap">
-            <Link to="/" className="active">
-              <img src={logoImg} alt="ICN 로고 이미지"/>
-            </Link>
-  
-            <Nav />
+            <div className="headerLeft">
+              <Link to="/" className="active">
+                <img src={logoImg} alt="ICN 로고 이미지"/>
+              </Link>
+    
+              <Nav />
+            </div>
+            <Signs />
           </div>
-          <Signs />
         </header>
       </Desktop>
     </>

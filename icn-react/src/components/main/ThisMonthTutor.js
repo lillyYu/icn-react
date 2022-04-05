@@ -19,38 +19,40 @@ export const ThisMonthTutor = (props) => {
 
   return(
     <section className="thisMonthTutor">
-      <h2 className="sectionTitle">
-        <span>{props.sectionTitle}</span>
-        <Link to="/">
-          See all
-          <span className="material-icons">navigate_next</span>
-        </Link>
-      </h2>
-
-      <article>
-        <Slider {...settings} className="slickSlider">
-          {
-            tutors.map((tutor, index) => {
-              return(
-                <div className="slickSlides" key={index}>
-                  <TutorItem 
-                    id={tutor.id}
-                    business={tutor.tags[0].name}
-                    education={tutor.tags[1].name}
-                    profile={tutor.profile}
-                    tutorName={tutor.tutorName}
-                    university={tutor.university}
-                    rate={tutor.rate}
-                    rateNum={tutor.rateNum}
-                  />
-                </div>
-                )
-              }
-            )
-          }
-        </Slider>
-
-      </article>
+      <div className="webWrap">
+        <h2 className="sectionTitle">
+          <span>{props.sectionTitle}</span>
+          <Link to="/">
+            See all
+            <span className="material-icons">navigate_next</span>
+          </Link>
+        </h2>
+  
+        <article>
+          <Slider {...settings} className="slickSlider">
+            {
+              tutors.map((tutor, index) => {
+                return(
+                  <div className="slickSlides" key={index}>
+                    <TutorItem 
+                      id={tutor.id}
+                      business={tutor.tags[0].name}
+                      education={tutor.tags[1].name}
+                      profile={tutor.profile}
+                      tutorName={tutor.tutorName}
+                      university={tutor.university}
+                      rate={tutor.rate}
+                      rateNum={tutor.rateNum}
+                    />
+                  </div>
+                  )
+                }
+              )
+            }
+          </Slider>
+  
+        </article>
+      </div>
     </section>
   )
 }

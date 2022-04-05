@@ -5,8 +5,7 @@
 
     // section common styling
     h2.sectionTitle {
-      @include flexAlignCenter();
-      justify-content: space-between;
+      @include flexCenterBetween();
       margin-bottom: 4.4rem;
 
       span {
@@ -83,9 +82,11 @@
 
     // Section 3 : Improve Your Skill...
     &.improveSkill {
-      @include flexAlignCenter();
-      justify-content: space-between;
       padding: 10rem 10%;
+      
+      article {
+        @include flexCenterBetween();
+      }
     }
 
     // Section 4 : Recommend Tutors

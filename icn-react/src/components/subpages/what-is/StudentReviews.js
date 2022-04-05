@@ -16,26 +16,28 @@ const StudentReviews = ({title}) => {
 
   return (
     <section className="blueBg">
-      <h2 className="sectionTitle">{title}</h2>
-      
-      <div className="reviewWrap">
-        <Slider {...settings} className="slickSlider">
-            {
-              reviews.map((review) => {
-                return(
-                  <div key={review.id}>
-                    <ReviewItem 
-                      id={review.id}
-                      student={review.student}
-                      tutor={review.tutor}
-                      rate={review.rate}
-                      content={review.content}
-                    />
-                  </div>
-                )
-              })
-            }
-        </Slider>
+      <div className='webWrap'>
+        <h2 className="sectionTitle">{title}</h2>
+        
+        <div className="reviewWrap">
+          <Slider {...settings} className="slickSlider">
+              {
+                reviews.map((review) => {
+                  return(
+                    <div key={review.id}>
+                      <ReviewItem 
+                        id={review.id}
+                        student={review.student}
+                        tutor={review.tutor}
+                        rate={review.rate}
+                        content={review.content}
+                      />
+                    </div>
+                  )
+                })
+              }
+          </Slider>
+        </div>
       </div>
     </section>
   )

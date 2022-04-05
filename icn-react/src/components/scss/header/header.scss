@@ -1,15 +1,17 @@
 @import 'commons/scss/var.scss';
 
 .webHeader {
-  @include flexAlignCenter();
-  justify-content: space-between;
+  @include webInlinePadding();
 
-  width: 100%;
-  height: 8rem;
-  padding: $web-inline-padding;
-  box-shadow: 0 0.8rem 6.4rem rgba(16, 24, 40, 0.04);
+  .webHeaderWrap {
+    @include webMargin();
+    @include flexCenterBetween();
+    width: 100%;
+    height: 8rem;
+    box-shadow: 0 0.8rem 6.4rem rgba(16, 24, 40, 0.04);
+  }
 
-  .webHeaderWrap{
+  .headerLeft{
     @include flexAlignCenter();
   }
   // Nav.js

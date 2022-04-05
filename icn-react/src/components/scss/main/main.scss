@@ -1,57 +1,59 @@
 @import 'commons/scss/var.scss';
 
 main.webMainBanner {
-  @include flexAlignCenter();
-  justify-content: space-between;
+  @include webInlinePadding();
   height: 52rem;
-  padding: $web-inline-padding;
   background-color: $light-blue-color;
 
-  .mainBannerLeft {
-    max-width: 42rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .mainBannerWrap {
+    @include webMargin();
+    @include flexCenterBetween();
 
-    .bannerText {
-      header {
-        margin-bottom: 1.6rem;
-        font-size: 4.8rem;
-        font-weight: $bold-font-weight;
-        text-transform: uppercase;
+    .mainBannerLeft {
+      max-width: 42rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-        mark {
-          position: relative;
-          background-color: transparent;
-          color: $point-blue-color;
-          isolation: isolate;
+      .bannerText {
+        header {
+          margin-bottom: 1.6rem;
+          font-size: 4.8rem;
+          font-weight: $bold-font-weight;
+          text-transform: uppercase;
 
-          &::before {
-            position: absolute;
-            content: '';
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            bottom: -15%;
-            background-image: url('../../../commons/images/green-line.svg');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: left bottom;
+          mark {
+            position: relative;
+            background-color: transparent;
+            color: $point-blue-color;
+            isolation: isolate;
+
+            &::before {
+              position: absolute;
+              content: '';
+              z-index: -1;
+              width: 100%;
+              height: 100%;
+              bottom: -15%;
+              background-image: url('../../../commons/images/green-line.svg');
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: left bottom;
+            }
           }
         }
-      }
 
-      p {
-        margin-bottom: 2.4rem;
+        p {
+          margin-bottom: 2.4rem;
+        }
       }
     }
   }
+
 }
 
 .mobileMainBanner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexCenterBetween();
   height: 16rem;
   padding: $mobile-inline-padding;
   background-color: $light-blue-color;
@@ -75,7 +77,7 @@ main.webMainBanner {
   .mainRight {
     display: flex;
 
-    .alertIcon{
+    .alertIcon {
       position: relative;
       display: inline-block;
       width: 1.6rem;
@@ -103,7 +105,7 @@ main.webMainBanner {
       height: 4rem;
       margin-left: 2rem;
       border-radius: 50%;
-    }  
+    }
   }
-  
+
 }

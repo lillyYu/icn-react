@@ -18,20 +18,23 @@ export const Main = () => {
       <Desktop>
         <div className="icnMain">
           <main className='webMainBanner'>
-            <div className='mainBannerLeft'>
-              <div className='bannerText'>
-                <header>Find Your Best <br /><mark>Online Class</mark></header>
-                <p>
-                  The best and lagest online tutoring application in Korea.
-                  The most complete online learning solution
-                </p>
+            <div className="mainBannerWrap">
+              <div className='mainBannerLeft'>
+                <div className='bannerText'>
+                  <header>Find Your Best <br /><mark>Online Class</mark></header>
+                  <p>
+                    The best and lagest online tutoring application in Korea.
+                    The most complete online learning solution
+                  </p>
+                </div>
+      
+                <Link to="/sign-up" className="blueButton">Class register now!</Link>
               </div>
-    
-              <Link to="/sign-up" className="blueButton">Class register now!</Link>
+              
+              <figure>
+                <img src={mainBanner} alt="메인 배너 테스트"/>
+              </figure>
             </div>
-            <figure>
-              <img src={mainBanner} alt="메인 배너 테스트"/>
-            </figure>
           </main>
   
           {/* Section 1 */}

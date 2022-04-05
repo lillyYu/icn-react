@@ -41,7 +41,6 @@ export const NewTutors = (props) => {
     for ( let i = 0; i < tutors.length; i++) {
       let businessIs = tutors[i].tags[0].is;
       let educationIs = tutors[i].tags[1].is;
-      console.log(businessIs);
 
       for( let j = 0; j < tutors[i].tags; j++ ){
         console.log(tutors[i].tags[j]);
@@ -51,20 +50,22 @@ export const NewTutors = (props) => {
 
   return(
     <section className="newTutor">
-      <h2 className="sectionTitle">
-        <span>{props.sectionTitle}</span>
-        <Link to="/">
-          See all
-          <span className="material-icons">navigate_next</span>
-        </Link>
-      </h2>
-
-      <article>
-        <Slider {...settings} className="slickSlider">
-          {tutorList}
-        </Slider>
-
-      </article>
+      <div className="webWrap">
+        <h2 className="sectionTitle">
+          <span>{props.sectionTitle}</span>
+          <Link to="/">
+            See all
+            <span className="material-icons">navigate_next</span>
+          </Link>
+        </h2>
+  
+        <article>
+          <Slider {...settings} className="slickSlider">
+            {tutorList}
+          </Slider>
+  
+        </article>
+      </div>
     </section>
   )
 }
