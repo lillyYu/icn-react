@@ -7,6 +7,7 @@ $mobile-base-font-size: 1.4rem;
 $point-blue-color: #2A549D;
 $light-blue-color: #EFF3FB;
 $alert-red-color: #EB5757;
+$sky-blue-color: #C9DCFE;
 
 // font colors
 $base-font-color: #424242;
@@ -35,6 +36,17 @@ $mobile-inline-padding : 0 5%;
   padding: 1.4rem 2rem;
   border-radius: 0.8rem;
   border: 1px solid $point-blue-color;
+  font-weight: $bold-font-weight;
+}
+
+@mixin whiteButton {
+  display: inline-block;
+  background-color: white;
+  color: $point-blue-color;
+  width: fit-content;
+  padding: 1.4rem 2rem;
+  border-radius: 0.8rem;
+  border: 1px solid white;
   font-weight: $bold-font-weight;
 }
 
