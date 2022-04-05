@@ -1,0 +1,144 @@
+@import 'commons/scss/var';
+
+.icnMain {
+  section {
+
+    // section common styling
+    h2.sectionTitle {
+      @include flexAlignCenter();
+      justify-content: space-between;
+      margin-bottom: 4.4rem;
+
+      span {
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        color: $title-font-color;
+      }
+
+      a {
+        @include flexAlignCenter();
+        font-weight: 500;
+        font-size: $web-base-font-size;
+        line-height: 24px;
+        color: $point-blue-color;
+
+        span {
+          color: $point-blue-color;
+          font-weight: 400;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    h3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 4.4rem;
+
+      span {
+        margin-bottom: 2.4rem;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        color: $title-font-color;
+
+        mark {
+          @include markPoint();
+        }
+      }
+
+      p {
+        color: $grey-font-color;
+      }
+
+      a {
+        @include blueButton();
+        margin-top: 3.2rem;
+
+      }
+    }
+
+    article {
+      .slick-slider {
+
+        .slick-list {
+          margin-left: -2.4rem;
+
+          .slick-track {
+            display: flex;
+            width: 100%;
+
+            .slick-slide {
+              margin-left: 2.4rem;
+            }
+          }
+        }
+
+        .slick-dots {
+          bottom: -5rem;
+
+          li {
+            button:before {
+              color: #D4DDEB;
+            }
+
+            &.slick-active button:before {
+              color: $point-blue-color;
+            }
+
+          }
+        }
+      }
+
+
+    }
+
+    // Section 1. New Contents
+    &.newContents {
+      padding: 10rem 10%;
+
+      article {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0 2.4rem;
+      }
+    }
+
+    // Section 2 : This Month's Tutors
+    &.thisMonthTutor,
+    &.newTutor {
+      padding: 10rem 10%;
+      background-color: $light-blue-color;
+
+      article {
+        width: 100%;
+      }
+    }
+
+    // Section 3 : Improve Your Skill...
+    &.improveSkill {
+      @include flexAlignCenter();
+      justify-content: space-between;
+      padding: 10rem 10%;
+    }
+
+    // Section 4 : Recommend Tutors
+    &.recommendTutors {
+      padding: 0 5%;
+
+      .bgWrap {
+        background-color: $light-blue-color;
+        padding: 4.8rem 5% 8rem;
+        border-radius: 2.4rem;
+      }
+    }
+
+    // Section 5 : New Tutors
+    &.newTutor {
+      background-color: white;
+    }
+  }
+}

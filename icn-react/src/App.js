@@ -1,15 +1,19 @@
 import { Header } from "components/header/Header";
-import { Main } from "components/Main";
-import { AboutUs } from "components/subpages/about-us/AboutUs";
-import { Career } from "components/subpages/career/Career";
-import { Class } from "components/subpages/class/Class";
-import { Faq } from "components/subpages/faq/Faq";
-import { Tutor } from "components/subpages/tutor/Tutor";
 import { SignIn } from "components/user/SignIn";
 import { SignUp } from "components/user/SignUp";
 import { Route, Routes } from "react-router-dom";
 
 import 'commons/scss/master.scss';
+import { WhatIs } from "components/subpages/whatIs/WhatIs";
+import { HowTo } from "components/subpages/howTo/HowTo";
+import { Review } from "components/subpages/review/Review";
+import { Class } from "components/subpages/class/Class";
+import { Main } from "components/main/Main";
+
+// slick slider css
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Footer } from "components/footer/Footer";
 
 function App() {
   return (
@@ -20,11 +24,10 @@ function App() {
         <Routes>
           {/* Sub pages - Nav */}
           <Route path="/" element={<Main />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/whatIs" element={<WhatIs />} />
+          <Route path="/howTo" element={<HowTo />} />
+          <Route path="/review" element={<Review />} />
           <Route path="/class" element={<Class />} />
-          <Route path="/tutor" element={<Tutor />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/faq" element={<Faq />} />
 
           {/* sign-up & sign-in */}
           <Route path="/sign-up" element={<SignUp />} />
@@ -32,6 +35,7 @@ function App() {
 
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }

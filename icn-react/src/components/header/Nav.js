@@ -1,14 +1,12 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export const Nav = () => {
   return(
     <nav>
-      <Link to="/" className="active">Home</Link>
-      <Link to="/about-us">About-us</Link>
-      <Link to="/class">Class</Link>
-      <Link to="/tutor">Tutor</Link>
-      <Link to="/career">Career</Link>
-      <Link to="/faq">FAQ</Link>
+      <NavLink to="/whatIs" activeclassname="active">What is ICN</NavLink>
+      <NavLink to="/howTo" activeclassname="active">How to</NavLink>
+      <NavLink to="/review" activeclassname="active">Review</NavLink>
+      <NavLink to="/class" activeclassname="active">Class</NavLink>
     </nav>
   )
 }

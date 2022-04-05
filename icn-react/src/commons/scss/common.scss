@@ -1,0 +1,44 @@
+@import 'commons/scss/var';
+
+// tags styling
+.tags {
+  display: flex;
+  gap: 0 1.6rem;
+  margin-bottom: 1.6rem;
+
+  li {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-left: 1rem;
+
+    &::before {
+      content: '';
+      left: 0;
+      top: calc(50% - 3px);
+      position: absolute;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+    }
+
+    &.business {
+      color: $point-blue-color;
+
+      &::before {
+        background-color: $point-blue-color;
+      }
+    }
+
+    &.education {
+      color: $alert-red-color;
+
+      &::before {
+        background-color: $alert-red-color;
+      }
+    }
+  }
+
+}

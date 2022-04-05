@@ -5,11 +5,13 @@ $mobile-base-font-size: 1.4rem;
 
 // colors
 $point-blue-color: #2A549D;
-$light-blue-color: #98BEFF;
+$light-blue-color: #EFF3FB;
 $alert-red-color: #EB5757;
 
 // font colors
-$base-font-color: #333333;
+$base-font-color: #424242;
+$title-font-color: #333333;
+$grey-font-color : #a5a5a5;
 
 // font weight
 $normal-font-weight: 400;
@@ -25,12 +27,12 @@ $mobile-inline-padding : 0 5%;
 
 
 // --------------------------- mixins
-@mixin whiteButton {
+@mixin blueButton {
   display: inline-block;
-  background-color: white;
-  color: $point-blue-color;
+  background-color: $point-blue-color;
+  color: white;
   width: fit-content;
-  padding: 1.2rem;
+  padding: 1.4rem 2rem;
   border-radius: 0.8rem;
   border: 1px solid $point-blue-color;
   font-weight: $bold-font-weight;
@@ -46,5 +48,30 @@ $mobile-inline-padding : 0 5%;
     height: 100%;
     inset: 0;  
     object-fit: cover;
+  }
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin markPoint{
+  position: relative;
+  background-color: transparent;
+  color: $point-blue-color;
+  isolation: isolate;
+
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    bottom: -15%;
+    background-image: url('../images/green-line.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
   }
 }

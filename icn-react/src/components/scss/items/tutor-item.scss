@@ -1,0 +1,61 @@
+@import 'commons/scss/var';
+
+.tutorItem {
+  
+  &>figure {
+    @include imageAlignCenter();
+    width: 100%;
+    height: 24rem;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+
+  .infoWrap {
+    padding: 1.6rem;
+    background-color: white;
+    border-radius: 0 0 1.2rem 1.2rem;
+
+    header {
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+
+    &>p {
+      margin-bottom: 0.8rem;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: $grey-font-color;
+    }
+
+    .starRate {
+      @include flexAlignCenter();
+
+      .stars {
+        width: 11.3rem;
+        height: 2rem;
+        margin-right: 1rem;
+        overflow: hidden;
+
+        li {
+          display: inline-block;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+
+          background: url('../../../commons/images/stars.png') no-repeat;
+          background-position: center left;
+        }
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: $grey-font-color;
+      }
+    }
+    
+  }
+}

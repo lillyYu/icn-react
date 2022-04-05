@@ -1,5 +1,5 @@
-export const Class = () => {
+export const Class =() => {
   return(
-    <h1>This is Class!!</h1>
+    <div>Class</div>
   )
 }
