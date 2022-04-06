@@ -42,7 +42,13 @@
   }
 
 }
+// align styling
+.alignRight {
+  display: flex;
+  justify-content: flex-end;
 
+}
+// button styling
 .blueButton {
   @include blueButton();
 }
