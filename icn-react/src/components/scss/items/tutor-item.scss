@@ -1,18 +1,19 @@
 @import 'commons/scss/var';
 
 .tutorItem {
+  border: 1px solid #eee;
+  border-radius: 1.2rem;
+  overflow: hidden;
 
   &>figure {
     @include imageAlignCenter();
     width: 100%;
     height: 24rem;
-    border-radius: 1.2rem 1.2rem 0 0;
   }
 
   .infoWrap {
     padding: 1.6rem;
     background-color: white;
-    border-radius: 0 0 1.2rem 1.2rem;
 
     header {
       margin-bottom: 0.8rem;
@@ -28,8 +29,6 @@
       line-height: 1.6rem;
       color: $grey-font-color;
     }
-
-    
 
   }
 }

@@ -65,7 +65,6 @@
 
   .stars {
     display: flex;
-    margin-right: 1rem;
     overflow: hidden;
 
     li {
@@ -88,6 +87,10 @@
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: $grey-font-color;
+
+    &:first-of-type {
+      margin-right: 0.3rem;
+    }
 
     &.color {
       font-size: 1.4rem;

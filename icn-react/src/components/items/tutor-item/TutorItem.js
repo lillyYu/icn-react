@@ -18,15 +18,6 @@ export const TutorItem = (props) => {
         <header>{props.tutorName}</header>
         <p>{props.university}</p>
 
-        {/* <div className="starRate">
-          <ul className='stars'>
-            <li style={{ width: `${starProportion}%`}}></li>
-          </ul>
-
-          <span>{props.rate}</span>
-          <span>({props.rateNum} rating)</span>
-        </div> */}
-
         <StarRate rate={props.rate.toFixed(1)} rateNum={props.rateNum} id={props.id}/>
       </div>
     </div>

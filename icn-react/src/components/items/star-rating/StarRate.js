@@ -6,8 +6,10 @@ const StarRate = ({rate, rateNum, id, color}) => {
     <div className="starRate">
       <Stars rate={rate} id={id} />
 
-      <span className={color && "color"}>{rate}</span>
-      {rateNum && <span>({rateNum} rating)</span>}
+      <div>
+        <span className={color && "color"}>{rate}</span>
+        {rateNum && <span>({rateNum} rating)</span>}
+      </div>
     </div>
   )
 }
