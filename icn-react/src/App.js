@@ -14,6 +14,7 @@ import { Main } from "components/main/Main";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Footer } from "components/footer/Footer";
+import FindPassword from "components/user/FindPassword";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           {/* sign-up & sign-in */}
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/find-password" element={<FindPassword />} />
 
         </Routes>
       </div>
