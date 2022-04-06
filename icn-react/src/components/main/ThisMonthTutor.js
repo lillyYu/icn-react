@@ -34,16 +34,18 @@ export const ThisMonthTutor = (props) => {
               tutors.map((tutor, index) => {
                 return(
                   <div className="slickSlides" key={index}>
-                    <TutorItem 
-                      id={tutor.id}
-                      business={tutor.tags[0].name}
-                      education={tutor.tags[1].name}
-                      profile={tutor.profile}
-                      tutorName={tutor.tutorName}
-                      university={tutor.university}
-                      rate={tutor.rate}
-                      rateNum={tutor.rateNum}
-                    />
+                    <Link to={`/tutor/${tutor.id}`}>
+                      <TutorItem 
+                        id={tutor.id}
+                        business={tutor.tags[0].name}
+                        education={tutor.tags[1].name}
+                        profile={tutor.profile}
+                        tutorName={tutor.tutorName}
+                        university={tutor.university}
+                        rate={tutor.rate}
+                        rateNum={tutor.rateNum}
+                      />
+                    </Link>
                   </div>
                   )
                 }

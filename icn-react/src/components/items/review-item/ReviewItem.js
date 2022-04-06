@@ -1,5 +1,4 @@
 import React from 'react'
-import Stars from '../star-rating/Stars'
 import 'components/scss/items/review-item.scss';
 import StarRate from '../star-rating/StarRate';
 

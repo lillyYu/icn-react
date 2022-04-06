@@ -16,6 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Footer } from "components/footer/Footer";
 import FindPassword from "components/user/FindPassword";
 import ClassDetail from "components/subpages/classes/detail-pages/ClassDetail";
+import TutorDetail from "components/items/tutor-item/TutorDetail";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
 
           {/* Detail pages -------------------------------- */}
           <Route path="/class/:className" element={<ClassDetail />} />
+          <Route path="/tutor/:tutorId" element={<TutorDetail />} />
 
 
         </Routes>

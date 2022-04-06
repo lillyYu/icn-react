@@ -32,3 +32,283 @@
 
   }
 }
+
+// tutor detail styling
+.tutorDetail {
+  @include webInlinePadding();
+
+  .tutorDetailWrap {
+    @include webMargin();
+
+    .breadcrumbs {
+      @include flexCenterBetween();
+      margin: 2rem 0 3.2rem;
+
+      a {
+        color: $grey-font-color;
+
+        i {
+          margin-right: 1.5rem;
+        }
+      }
+
+      nav {
+        color: $grey-font-color;
+
+        i {
+          &:first-of-type {
+            margin-right: 1rem;
+            color: $point-blue-color;
+          }
+
+          &:nth-of-type(2) {
+            margin-inline: 1.5rem;
+          }
+        }
+
+        span {
+          &:nth-of-type(2) {
+            color: $light-grey-color;
+          }
+        }
+      }
+    }
+
+    article {
+      display: flex;
+      flex-direction: row;
+      flex: 0 1 auto;
+      position: relative;
+      width: 100%;
+      padding-bottom: 2rem;
+      gap: 0 2.4rem;
+
+      main {
+        flex-basis: 66.66666666%;
+        max-width: 66.66666666%;
+
+        section {
+          h2 {
+            margin-bottom: 2.4rem;
+            font-weight: $bold-font-weight;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+          }
+
+          &.video {
+            iframe {
+              width: 100%;
+            }
+          }
+        }
+
+        .tutorTap {
+          display: flex;
+          margin: 4rem 0 3.2rem;
+
+          li {
+            padding: 0.8rem 2rem;
+            color: $grey-font-color;
+            border-radius: 1.2rem;
+            font-weight: $medium-font-weight;
+            cursor: pointer;
+
+            &:hover,
+            &.active {
+              background-color: #EDF4FF;
+              color: $point-blue-color;
+            }
+          }
+        }
+
+        .tabContent {
+          .tutorIntro {
+            section {
+              margin-bottom: 2.4rem;
+              padding: 2rem;
+              background: white;
+              box-shadow: 0px 8px 64px rgba(16, 24, 40, 0.04);
+              border-radius: 1.2rem;
+
+              ul {
+                padding-left: 2rem;
+
+                li {
+                  list-style: disc;
+                }
+              }
+            }
+          }
+        }
+
+        .tutorReview {
+          .reviewGraph {
+            @include flexCenterBetween();
+            padding: 2rem;
+            background: #F7F8FD;
+            border-radius: 1.2rem;
+
+            .reviewLeft {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 1.6rem 0;
+
+              margin-right: 4rem;
+              color: #F2C94C;
+
+              strong {
+                font-weight: $bold-font-weight;
+                font-size: 4.4rem;
+                line-height: 5.2rem;
+              }
+
+              .stars {
+                display: flex;
+                gap: 1rem;
+                font-size: 2rem;
+              }
+            }
+
+            .reviewRight {
+              flex: 1;
+              ul {
+                li{
+                  width: 100%;
+                  @include alignCenter();
+                  gap: 0 1.2rem;
+                  margin-bottom: 1.2rem;
+
+                  &>span {
+                    font-size: 1.4rem;
+                    &:first-of-type {
+                      display: inline-block;
+                      width: 8rem;
+                      font-weight: $medium-font-weight;
+                    }
+                    &:last-of-type{
+                      display: inline-block;
+                      width: 3.2rem;
+                    }
+                  }
+
+                  p {
+                    position: relative;
+                    flex: 1;
+                    height: 0.6rem;
+                    border-radius: 10rem;
+                    background-color: #D2E3FF;
+                    overflow: hidden;
+
+                    span {
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      height: 100%;
+                      border-radius: 10rem;
+                      background-color: $point-blue-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .studentComment {
+          margin-bottom: 5.2rem;
+          &>ul {
+            margin-top: 2.4rem;
+            
+            &>li {
+              margin-top: 2.4rem;
+              padding-bottom: 2.4rem;
+              border-bottom: 1px solid $divider-color;
+
+              &:last-child {
+                border-bottom: transparent;
+              }
+              header {
+                font-weight: $medium-font-weight;
+              }
+
+              .stars {
+                display: flex;
+                height: 1.4rem;
+                margin-top: 0.5rem;
+                gap: 0 1rem;
+                font-size: 1.4rem;
+                color: #F2C94C;
+              }
+
+              p {
+                margin-top: 1.6rem;
+                font-size: 1.4rem;
+                color: $grey-font-color;
+                line-height: 2.4rem;
+              }
+            }
+          }
+          button {
+            @include alignCenter();
+            color: $point-blue-color;
+            background-color: transparent;
+
+            i {
+              margin-right: 1.2rem;
+            }
+          }
+        }
+
+      }
+
+      aside {
+        position: sticky;
+        top: 2rem;
+        margin-bottom: 2rem;
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%;
+        height: fit-content;
+        padding: 2rem;
+        box-shadow: 0px 8px 64px rgba(16, 24, 40, 0.08);
+        border-radius: 12px;
+
+        .tutorInfoWrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          figure {
+            @include imageAlignCenter();
+            width: 8rem;
+            height: 8rem;
+            margin: 0 auto 2.4rem;
+            border-radius: 50%;
+          }
+
+          header {
+            font-weight: $medium-font-weight;
+            font-size: 3.2rem;
+            line-height: 4rem;
+            margin-bottom: 0.8rem;
+
+            strong {
+              color: $point-blue-color;
+            }
+          }
+
+          em {
+            display: block;
+            margin-bottom: 2.4rem;
+            color: $grey-font-color;
+          }
+
+        }
+      }
+
+    }
+  }
+}
