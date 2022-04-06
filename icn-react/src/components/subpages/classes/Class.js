@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import banner from 'commons/images/sub-banner4.jpg'
 import BusinessClass from "./BusinessClass"
 import ESLClass from "./ESLClass"
@@ -28,7 +27,6 @@ export const Class =() => {
       <ESLClass title="ESL"/>
       <ExamClass title="Exam"/>
       <BasicClass title="Basic"/>
-      
     </div>
   )
 }

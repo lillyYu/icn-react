@@ -15,7 +15,7 @@ const BasicClass = ({title}) => {
   
         <article>
           {
-            contents.map((content, index) => {
+            contents.slice(0, 3).map((content, index) => {
               return(
                 <div key={index} className="contentItemWrap">
                   <ContentItem

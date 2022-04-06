@@ -17,19 +17,21 @@ export const NewContents = (props) => {
   
         <article>
           {
-            contents.map((content, index) => {
+            contents.slice(0, 3).map((content, index) => {
               return(
-                <div key={index} className="contentItemWrap">
-                  <ContentItem
-                    id={content.id}
-                    thumbnail={content.thumbnail}
-                    // tags={content.tags}
-                    title={content.title}
-                    profile={content.profile}
-                    tutorName={content.tutorName}
-                    university={content.university}
-                  />
-                </div>
+                <Link to={`/class/${content.title}`}>
+                  <div key={index} className="contentItemWrap">
+                    <ContentItem
+                      id={content.id}
+                      thumbnail={content.thumbnail}
+                      // tags={content.tags}
+                      title={content.title}
+                      profile={content.profile}
+                      tutorName={content.tutorName}
+                      university={content.university}
+                    />
+                  </div>
+                </Link>
                 )
               }
             )
