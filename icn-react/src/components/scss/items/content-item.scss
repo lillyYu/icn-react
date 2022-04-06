@@ -1,66 +1,67 @@
 @import 'commons/scss/var';
 
-.contentItemWrap {
+
+  .contentItemWrap {
   flex: 1;
+    .contentItem {
+      box-shadow: 0px 8px 64px rgba(16, 24, 40, 0.08);
+      border-radius: 1.2rem;
+      overflow: hidden;
 
-  .contentItem {
-    box-shadow: 0px 8px 64px rgba(16, 24, 40, 0.08);
-    border-radius: 1.2rem;
-    overflow: hidden;
-
-    &>figure {
-      @include imageAlignCenter();
-      width: 100%;
-      height: 24rem;
-    }
-
-    .infoWrap {
-      padding: 1.6rem;
-      background-color: white;
-
-      header {
-        height: 5.6rem;
-        margin-bottom: 2.4rem;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.8rem;
+      &>figure {
+        @include imageAlignCenter();
+        width: 100%;
+        height: 24rem;
       }
 
-      .tutorProfile {
-        display: flex;
+      .infoWrap {
+        padding: 1.6rem;
+        background-color: white;
 
-        figure {
-          @include imageAlignCenter();
-          width: 4.8rem;
-          height: 4.8rem;
-          margin-right: 1.2rem;
-          border-radius: 50%;
+        header {
+          height: 5.6rem;
+          margin-bottom: 2.4rem;
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 2.8rem;
         }
 
-        p {
-          span {
-            display: block;
+        .tutorProfile {
+          display: flex;
 
-            &:first-of-type {
-              margin-bottom: 0.8rem;
-              font-weight: 500;
-              font-size: 1.6rem;
-              line-height: 2.4rem;
-            }
+          figure {
+            @include imageAlignCenter();
+            width: 4.8rem;
+            height: 4.8rem;
+            margin-right: 1.2rem;
+            border-radius: 50%;
+          }
 
-            &:last-of-type {
-              font-weight: 400;
-              font-size: 1.2rem;
-              line-height: 1.6rem;
-              color: $grey-font-color;
+          p {
+            span {
+              display: block;
+
+              &:first-of-type {
+                margin-bottom: 0.8rem;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+              }
+
+              &:last-of-type {
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: $grey-font-color;
+              }
             }
           }
         }
       }
-    }
 
+    }
   }
-}
+
 
 // class detail page styling
 .classDetail {
@@ -235,7 +236,7 @@
           padding: 2rem;
           background-color: white;
           box-shadow: 0px 8px 64px rgba(16, 24, 40, 0.04);
-          
+
           &>div {
             display: grid;
             gap: 2.4rem;
@@ -243,8 +244,9 @@
             grid-template-rows: 1fr 1fr;
           }
 
-          p{
+          p {
             text-align: center;
+
             button {
               margin-top: 2.4rem;
               background-color: transparent;
@@ -252,7 +254,7 @@
               color: $point-blue-color;
             }
           }
-          
+
 
         }
       }
@@ -329,7 +331,7 @@
         }
       }
 
-      .classIncludes{
+      .classIncludes {
         h3 {
           font-weight: $bold-font-weight;
           line-height: 2.4rem;
@@ -345,13 +347,14 @@
               width: 2rem;
               margin-right: 1.2rem;
             }
+
             span {
               font-size: 1.4rem;
             }
           }
         }
       }
-      
+
 
     }
   }

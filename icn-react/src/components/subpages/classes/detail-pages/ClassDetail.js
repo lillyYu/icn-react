@@ -77,8 +77,8 @@ const ClassDetail = () => {
               {
                 contents.map((content, index) => {
                   return(
-                    <Link to={`/class/${content.title}`}>
-                      <div key={index} className="contentItemWrap">
+                    <div key={index} className="contentItemWrap">
+                      <Link to={`/class/${content.title}`}>
                         <ContentItem
                           id={content.id}
                           thumbnail={content.thumbnail}
@@ -88,8 +88,8 @@ const ClassDetail = () => {
                           tutorName={content.tutorName}
                           university={content.university}
                         />
-                      </div>
-                    </Link>
+                      </Link>
+                    </div>
                     )
                   }
                 )
