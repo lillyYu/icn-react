@@ -129,8 +129,12 @@
         }
       }
 
+      h3 {
+        text-align: center;
+      }
+
       &.newContents {
-        padding: 5.2rem 5%;
+        padding: 5.2rem 3%;
 
         article {
           overflow: auto;
@@ -138,7 +142,38 @@
           gap: 0 2.4rem;
         }
       }
+
+      &.thisMonthTutor,
+      &.newTutor{
+        padding: 5.2rem 3%;
+      }
+
+      &.newTutor{ 
+        margin-bottom: 3rem;
+      }
+
+      &.improveSkill {
+        padding: 5.2rem 3%;
+
+        article {
+          @include flexCenterColumn();
+          
+          h3{
+            align-items: center;
+          }
+
+          img {
+            width: 100%;
+          }
+          
+        }
+      }
+
+      &.recommendTutors {
+        padding: 0;
+      }
     }
+
   }
 
 

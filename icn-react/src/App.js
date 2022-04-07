@@ -40,10 +40,9 @@ function App() {
           {/* Detail pages -------------------------------- */}
           <Route path="/class/:className" element={<ClassDetail />} />
           <Route path="/tutor/:tutorId" element={<TutorDetail />} />
-
-
         </Routes>
       </div>
+
       <Footer />
     </>
   );

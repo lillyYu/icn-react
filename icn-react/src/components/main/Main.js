@@ -81,6 +81,15 @@ export const Main = () => {
 
           {/* Section 2 */}
           <ThisMonthTutor sectionTitle="This Month's Tutors" />
+
+          {/* Section 3 */}
+          <ImproveSkill />
+
+          {/* Section 4 */}
+          <RecommendTutors sectionTitle="Recommend Tutors"/>
+
+          {/* Section 5 */}
+          <NewTutors sectionTitle="New Tutors"/>
         </div>
       </Mobile>
     </>

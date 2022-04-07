@@ -312,3 +312,19 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .tutorItem {
+    &>figure {
+      height: 16rem;
+    }
+  
+    .infoWrap {
+      header {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+  
+}

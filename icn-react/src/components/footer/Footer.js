@@ -4,8 +4,8 @@ import '../scss/footer/footer.scss';
 
 export const Footer = () => {
   return(
-    <Desktop>
-      <footer className="webFooter">
+    <footer className="footer">
+      <div className="webWrap">
         <div className="footerTop">
           <div className="footerLeft">
             <p>Join our class &amp; <br />improve your skill</p>
@@ -17,7 +17,7 @@ export const Footer = () => {
             </p>
             <Link to='/sign-up' className="whiteButton">Sign up now</Link>
           </div>
-
+  
           <div className="footerRight">
             <ul>
               <li>
@@ -33,7 +33,7 @@ export const Footer = () => {
                 <div>Certified tutors</div>
                 <div>Professional tutors</div>
               </li>
-
+  
               <li>
                 <section>
                   <span>Tutor</span>
@@ -52,7 +52,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-
+  
         <div className="footerBottom">
           <header>ICN</header>
           <p>The most complete online learning solution</p>
@@ -61,7 +61,7 @@ export const Footer = () => {
             <span>Privacy Policy</span>
           </div>
         </div>
-      </footer>
-    </Desktop>
+      </div>
+    </footer>
   )
 }
