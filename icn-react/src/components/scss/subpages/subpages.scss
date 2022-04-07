@@ -259,6 +259,54 @@
         padding: 2rem 3%;
       }
     }
+
+    &.howTo {
+      .registerClassWrap {
+        article {
+          @include flexCenterColumn();
+          gap: 0 10rem;
+
+          div {
+            order: 1;
+
+            header {
+              font-size: 2.4rem;
+              line-height: 3.2rem;
+            }
+
+            p {
+              margin-bottom: 3.2rem;
+              font-size: 1.4rem;
+              line-height: 2.4rem;
+            }
+          }
+
+          figure {
+            order: 2;
+
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .divider {
+          height: 15rem;
+          
+          &.left {
+            background: url('../../../commons/images/how-to-divider-left-mobile.png') no-repeat;
+            background-position: center;
+          }
+
+          &.right {
+            background: url('../../../commons/images/how-to-divider-right-mobile.png') no-repeat;
+            background-position: center;
+          }
+        }
+      }
+    }
   }
 
 

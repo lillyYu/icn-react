@@ -10,57 +10,25 @@ export const WhatIs =() => {
   
 
   return(
-    <>
-      <Desktop>
-        <div className="subpageStyling whatIs">
-          <main className="subMain">
-            <div>
-              <p>Welcome to ICN</p>
-              <header>
-                You can join with ICN<br/>
-                and upgrade your skill for<br/>
-                your <mark>bright future.</mark>
-              </header>
-              <Link to="/" className="blueButton">Class register now!</Link>
-            </div>
-            <figure>
-              <img src={banner} alt="person typing"/>
-            </figure>
-          </main>
-  
-          <OurService title="Our Service" />
-  
-          <StudentReviews title="Student Reviews"/>
-  
+    <div className="subpageStyling whatIs">
+      <main className="subMain">
+        <div>
+          <p>Welcome to ICN</p>
+          <header>
+            You can join with ICN<br/>
+            and upgrade your skill for<br/>
+            your <mark>bright future.</mark>
+          </header>
+          <Link to="/" className="blueButton">Class register now!</Link>
         </div>
-      </Desktop>
+        <figure>
+          <img src={banner} alt="person typing"/>
+        </figure>
+      </main>
 
-      <Mobile>
-        <div className="subpageStyling whatIs">
-            <main className="subMain">
-              <div>
-                <p>Welcome to ICN</p>
-                <header>
-                  You can join with ICN<br/>
-                  and upgrade your skill for<br/>
-                  your <mark>bright future.</mark>
-                </header>
-                <Link to="/" className="blueButton">Class register now!</Link>
-              </div>
+      <OurService title="Our Service" />
 
-              <figure>
-                <img src={banner} alt="person typing"/>
-              </figure>
-            </main>
-
-            <OurService title="Our Service" />
-
-            <StudentReviews title="Student Reviews"/>
-          </div>
-      </Mobile>
-    </>
-
-
-    
+      <StudentReviews title="Student Reviews"/>
+    </div>
   )
 }
