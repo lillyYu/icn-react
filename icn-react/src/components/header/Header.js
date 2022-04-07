@@ -24,6 +24,24 @@ export const Header = (children) => {
           </div>
         </header>
       </Desktop>
+
+      <Mobile>
+        <header className="mobileHeader">
+          <Link to="/" className="active">
+            <img src={logoImg} alt="ICN 로고 이미지"/>
+          </Link>
+  
+          <div className="mobileHeaderRight">
+            <Link to="/sign-up">Sign up</Link>
+  
+            <div className="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </header>
+      </Mobile>
     </>
   )
 }

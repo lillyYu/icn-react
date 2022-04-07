@@ -13,9 +13,10 @@
     height: 100%;
   }
 
-  .headerLeft{
+  .headerLeft {
     @include flexAlignCenter();
   }
+
   // Nav.js
   nav {
     display: flex;
@@ -25,33 +26,12 @@
     a {
       display: inline-block;
       margin: 0 1.6rem;
+      font-weight: $medium-font-weight;
       transition: all 0.3s;
-
-      &::after {
-        position: absolute;
-        content: '';
-        width: 0.4rem;
-        height: 0.4rem;
-        background-color: $point-blue-color;
-        border-radius: 50%;
-        left: 50%;
-        bottom: -1.2rem;
-        transform: translateX(-50%);
-        transition: all 0.3s;
-
-        opacity: 0;
-      }
 
       &.active,
       &:hover {
-        position: relative;
         color: $point-blue-color;
-        letter-spacing: 0;
-
-        &::after {
-          opacity: 1;
-          bottom: -0.6rem;
-        }
       }
     }
   }
@@ -78,4 +58,56 @@
       }
     }
   }
+}
+
+.mobileHeader {
+  @include flexCenterBetween();
+  padding: 0.8rem 3%;
+  height: 4.8rem;
+
+  &>a {
+    height: 2.8rem;
+
+    img {
+      display: inline-block;
+      width: 11.6rem;
+    }
+  }
+
+  .mobileHeaderRight {
+    display: flex;
+    @include flexAlignCenter();
+
+    a {
+      margin-right: 1.5rem;
+      padding: 0.4rem 1.2rem;
+      border-radius: 0.8rem;
+      background-color: $point-blue-color;
+      color: white;
+    }
+
+    .hamburger {
+      position: relative;
+      width: 1.5rem;
+      height: 1rem;
+
+      span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $light-grey-color;
+
+        &:nth-child(1) {}
+
+        &:nth-child(2) {
+          top: 50%;
+        }
+
+        &:nth-child(3) {
+          top: 100%;
+        }
+      }
+    }
+  }
+
 }

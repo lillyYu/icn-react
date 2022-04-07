@@ -80,6 +80,10 @@ $mobile-inline-padding : 0 5%;
   padding-inline: 10%;
 }
 
+@mixin mobileInlinePadding {
+  padding-inline: 5%;
+}
+
 // aligns
 @mixin imageAlignCenter {
   position: relative;
@@ -115,6 +119,13 @@ $mobile-inline-padding : 0 5%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+@mixin flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 // point stylings

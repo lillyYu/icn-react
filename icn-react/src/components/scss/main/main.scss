@@ -1,6 +1,6 @@
 @import 'commons/scss/var.scss';
 
-main.webMainBanner {
+main.mainBanner {
   @include webInlinePadding();
   height: 52rem;
   background-color: $light-blue-color;
@@ -16,6 +16,8 @@ main.webMainBanner {
       justify-content: center;
 
       .bannerText {
+        margin-top: 1.8rem;
+
         header {
           margin-bottom: 1.6rem;
           font-size: 4.8rem;
@@ -52,60 +54,44 @@ main.webMainBanner {
 
 }
 
-.mobileMainBanner {
-  @include flexCenterBetween();
-  height: 16rem;
-  padding: $mobile-inline-padding;
-  background-color: $light-blue-color;
-  border-radius: 0 0 2.4rem 2.4rem;
+@media (max-width: 1023px) {
+  main.mainBanner {
+    height: auto;
+    padding: 2.8rem 0 0;
 
-  .mainLeft {
-    max-width: 20rem;
-    color: white;
+    .mainBannerWrap{
+      @include flexCenterColumn();
+      @include mobileInlinePadding();
+      flex-wrap: wrap;
 
-    header {
-      margin-bottom: 0.4rem;
-      font-size: 2.4rem;
-      font-weight: $bold-font-weight;
-    }
+      .mainBannerLeft {
+        @include flexCenterColumn();
+        max-width: none;
 
-    p {
-      color: $light-blue-color;
-    }
-  }
+        .bannerText{
+          text-align: center;
 
-  .mainRight {
-    display: flex;
+          header{
+            font-size: 6vw;
+          }
 
-    .alertIcon {
-      position: relative;
-      display: inline-block;
-      width: 1.6rem;
-      height: 1.6rem;
+          p {
+            text-align: center;
+          }
+        }
 
-      img {
-        width: 100%;
+        &>a {
+          margin-bottom: 4rem;
+        }
       }
 
-      .alertOn {
-        position: absolute;
-        right: -0.2rem;
-        top: -0.2rem;
-        display: block;
-        width: 0.4rem;
-        height: 0.4rem;
-        border-radius: 50%;
-        background-color: $alert-red-color;
+      figure {
+        flex: 1;
+        @include imageAlignCenter();
+        width: 80%;
+        aspect-ratio: 1;
+        margin: 0 auto;
       }
     }
-
-    figure {
-      @include imageAlignCenter();
-      width: 4rem;
-      height: 4rem;
-      margin-left: 2rem;
-      border-radius: 50%;
-    }
   }
-
 }

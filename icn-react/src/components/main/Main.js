@@ -17,13 +17,13 @@ export const Main = () => {
     <>
       <Desktop>
         <div className="icnMain">
-          <main className='webMainBanner'>
+          <main className='mainBanner'>
             <div className="mainBannerWrap">
               <div className='mainBannerLeft'>
                 <div className='bannerText'>
                   <header>Find Your Best <br /><mark>Online Class</mark></header>
                   <p>
-                    The best and lagest online tutoring application in Korea.
+                    The best and lagest online tutoring application in Korea.<br />
                     The most complete online learning solution
                   </p>
                 </div>
@@ -52,29 +52,36 @@ export const Main = () => {
           {/* Section 5 */}
           <NewTutors sectionTitle="New Tutors"/>
         </div>
-
       </Desktop>
-  
-      <Mobile>
-        <main className="mobileMainBanner">
-          <div className="mainLeft">
-            <header>Hello Lilly</header>
-            <p>
-              It’s a good day to learn 
-              something new.
-            </p>
-          </div>
-          <div className="mainRight">
-            <div className="alertIcon">
-              <img src={alertIcon} alt="alert icon"/>
-              <span className="alertOn"></span>
-            </div>
 
-            <figure>
-              <img src={profileSample} alt="profile" />
-            </figure>
-          </div>
-        </main>
+      <Mobile>
+        <div className="icnMain">
+          <main className='mainBanner'>
+            <div className="mainBannerWrap">
+              <div className='mainBannerLeft'>
+                <div className='bannerText'>
+                  <header>Find Your Best <br /><mark>Online Class</mark></header>
+                  <p>
+                    The best and lagest online tutoring application in Korea.<br />
+                    The most complete online learning solution
+                  </p>
+                </div>
+      
+                <Link to="/sign-up" className="blueButton">Class register now!</Link>
+              </div>
+              
+              <figure>
+                <img src={mainBanner} alt="메인 배너 테스트"/>
+              </figure>
+            </div>
+          </main>
+
+          {/* Section 1 */}
+          <NewContents sectionTitle="New Contents"/>
+
+          {/* Section 2 */}
+          <ThisMonthTutor sectionTitle="This Month's Tutors" />
+        </div>
       </Mobile>
     </>
   )
