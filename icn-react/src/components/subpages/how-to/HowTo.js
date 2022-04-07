@@ -15,7 +15,7 @@ export const HowTo =() => {
           </header>
           <Link to="/sign-up" className="blueButton">Sign up now!</Link>
         </div>
-        <figure>
+        <figure className="mobileDisplayNone">
           <img src={banner} alt="person typing"/>
         </figure>
       </main>

@@ -16,7 +16,7 @@ export const Review =() => {
             The most complete online learning solution
           </p>
         </div>
-        <figure>
+        <figure className='mobileDisplayNone'>
           <img src={banner} alt="person typing"/>
         </figure>
       </main>
