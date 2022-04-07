@@ -63,14 +63,12 @@
 .mobileHeader {
   @include flexCenterBetween();
   padding: 0.8rem 3%;
-  height: 4.8rem;
+  height: 6rem;
 
   &>a {
-    height: 2.8rem;
-
     img {
       display: inline-block;
-      width: 11.6rem;
+      height: 100%;
     }
   }
 
@@ -79,8 +77,8 @@
     @include flexAlignCenter();
 
     a {
-      margin-right: 1.5rem;
-      padding: 0.4rem 1.2rem;
+      margin-right: 2rem;
+      padding: 1rem 2rem;
       border-radius: 0.8rem;
       background-color: $point-blue-color;
       color: white;
@@ -88,26 +86,103 @@
 
     .hamburger {
       position: relative;
-      width: 1.5rem;
-      height: 1rem;
+      width: 2rem;
+      height: 1.5rem;
+      transition: all 0.3s;
 
       span {
         position: absolute;
         width: 100%;
         height: 2px;
         background-color: $light-grey-color;
+        right: 0;
+        transition: all 0.3s;
 
-        &:nth-child(1) {}
+        &:nth-child(1) {
+          opacity: 1;
+        }
 
         &:nth-child(2) {
+          width: 50%;
           top: 50%;
         }
 
         &:nth-child(3) {
           top: 100%;
+          width: 75%;
+        }
+      }
+
+      &.active {
+        span {
+          animation-delay: 0.3s;
+          animation-fill-mode: both;
+          animation-duration: 0.3s;
+
+          &:nth-child(1) {
+            animation-name: hamburgerFirstBtn;
+          }
+
+          &:nth-child(2) {
+            width: 100%;
+            animation-name: hamburgerSecondBtn;
+          }
+
+          &:nth-child(3) {
+            width: 100%;
+            animation-name: hamburgerThirdBtn;
+          }
         }
       }
     }
   }
+}
 
+.navWrap {
+  position: absolute;
+  top: 6rem;
+  left: -100vw;
+  z-index: 2;
+  width: 100vw;
+  height: calc(100vh - 6rem);
+  background-color: white;
+
+  &.active {
+    left: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    
+    a {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      padding: 1rem 2rem;
+      border: 1px solid $point-blue-color;
+    }
+  }
+}
+
+
+@keyframes hamburgerFirstBtn {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hamburgerSecondBtn {
+  to {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+}
+
+@keyframes hamburgerThirdBtn {
+  to {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
 }

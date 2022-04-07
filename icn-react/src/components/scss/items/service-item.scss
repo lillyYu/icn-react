@@ -83,3 +83,10 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .serviceItems{
+    flex-direction: column;
+    gap: 1.6rem 0;
+  }
+}

@@ -6,8 +6,14 @@ import { Signs } from "./Signs";
 
 import '../scss/header/header.scss';
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-export const Header = (children) => {
+export const Header = () => {
+  const [hamburger, setHamburger] = useState(false);
+
+  const handleHamburgerCick = () => {
+    setHamburger(!hamburger)
+  }
   return(
     <>
       <Desktop>
@@ -34,13 +40,16 @@ export const Header = (children) => {
           <div className="mobileHeaderRight">
             <Link to="/sign-up">Sign up</Link>
   
-            <div className="hamburger">
+            <div className={hamburger ? "hamburger active" : "hamburger"} onClick={handleHamburgerCick}>
               <span></span>
               <span></span>
               <span></span>
             </div>
           </div>
         </header>
+        <div className={hamburger ? "navWrap active" : "navWrap"}>
+          <Nav />
+        </div>
       </Mobile>
     </>
   )

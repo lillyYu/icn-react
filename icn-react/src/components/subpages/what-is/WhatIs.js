@@ -1,4 +1,4 @@
-import { Desktop } from "commons/mediaqueries/MediaQuery"
+import { Desktop, Mobile } from "commons/mediaqueries/MediaQuery"
 import { Link } from "react-router-dom"
 import "components/scss/subpages/subpages.scss"
 import banner from 'commons/images/sub-banner1.jpg'
@@ -10,29 +10,57 @@ export const WhatIs =() => {
   
 
   return(
-    <Desktop>
-      <div className="subpageStyling whatIs">
-        <main className="subMain">
-          <div>
-            <p>Welcome to ICN</p>
-            <header>
-              You can join with ICN<br/>
-              and upgrade your skill for<br/>
-              your <mark>bright future.</mark>
-            </header>
-            <Link to="/" className="blueButton">Class register now!</Link>
+    <>
+      <Desktop>
+        <div className="subpageStyling whatIs">
+          <main className="subMain">
+            <div>
+              <p>Welcome to ICN</p>
+              <header>
+                You can join with ICN<br/>
+                and upgrade your skill for<br/>
+                your <mark>bright future.</mark>
+              </header>
+              <Link to="/" className="blueButton">Class register now!</Link>
+            </div>
+            <figure>
+              <img src={banner} alt="person typing"/>
+            </figure>
+          </main>
+  
+          <OurService title="Our Service" />
+  
+          <StudentReviews title="Student Reviews"/>
+  
+        </div>
+      </Desktop>
+
+      <Mobile>
+        <div className="subpageStyling whatIs">
+            <main className="subMain">
+              <div>
+                <p>Welcome to ICN</p>
+                <header>
+                  You can join with ICN<br/>
+                  and upgrade your skill for<br/>
+                  your <mark>bright future.</mark>
+                </header>
+                <Link to="/" className="blueButton">Class register now!</Link>
+              </div>
+
+              <figure>
+                <img src={banner} alt="person typing"/>
+              </figure>
+            </main>
+
+            <OurService title="Our Service" />
+
+            <StudentReviews title="Student Reviews"/>
           </div>
-          <figure>
-            <img src={banner} alt="person typing"/>
-          </figure>
-        </main>
+      </Mobile>
+    </>
 
-        <OurService title="Our Service" />
 
-        <StudentReviews title="Student Reviews"/>
-
-      </div>
-    </Desktop>
     
   )
 }

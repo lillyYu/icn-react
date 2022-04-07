@@ -106,6 +106,7 @@
 }
 
 // 슬라이더 스타일링
+
 .slick-slider {
 
   .slick-list {
@@ -156,5 +157,9 @@
         }
       }
     }
+  }
+
+  .slickSlider{
+    margin-bottom: 5rem;
   }
 }
