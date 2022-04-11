@@ -9,7 +9,7 @@ import cardIcon from 'commons/images/buy-course-icon.svg';
 import cardIconWhite from 'commons/images/buy-course-icon-white.svg';
 import { Desktop, Mobile } from 'commons/mediaqueries/MediaQuery';
 
-import 'components/scss/items/content-detail.scss';
+import 'components/scss/items/details/content-detail.scss';
 
 const ContentDetail = () => {
   const [saveOn, setSaveOn] = useState(false);
