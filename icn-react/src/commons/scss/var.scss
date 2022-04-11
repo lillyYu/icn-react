@@ -17,6 +17,7 @@ $light-red-color: #ffdcdc;
 // font colors
 $base-font-color: #424242;
 $title-font-color: #333333;
+$dark-grey-color: #6a6a6a;
 $grey-font-color : #a5a5a5;
 $light-grey-color: #c8c8c8;
 $input-border-color: #E2E2E2;
@@ -33,7 +34,7 @@ $inactive-btn-color: #F3F4F6;
 
 // margin & padding
 $web-inline-padding : 0 10%;
-$mobile-inline-padding : 0 5%;
+$mobile-inline-padding : 0 3%;
 
 
 // --------------------------- mixins
@@ -99,7 +100,7 @@ $mobile-inline-padding : 0 5%;
 }
 
 @mixin mobileInlinePadding {
-  padding-inline: 5%;
+  padding-inline: 3%;
 }
 
 // aligns
