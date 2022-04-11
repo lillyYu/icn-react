@@ -429,6 +429,10 @@
             justify-content: center;
             width: 100%;
 
+            .starRate {
+              flex-direction: row;
+            }
+
             figure {
               margin: 0 auto 1.6rem;
             }
