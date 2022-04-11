@@ -4,24 +4,25 @@ import { ContentItem } from 'components/items/content-item/ContentItem';
 import contents from 'components/items/content-item/contents.json'
 import ClassIncludes from './ClassIncludes';
 
-import 'components/scss/items/class-detail.scss';
-
 import profile from 'commons/images/person-example.jpg';
 import cardIcon from 'commons/images/buy-course-icon.svg';
 import cardIconWhite from 'commons/images/buy-course-icon-white.svg';
 import { Desktop, Mobile } from 'commons/mediaqueries/MediaQuery';
 
-const ClassDetail = () => {
+import 'components/scss/items/content-detail.scss';
+
+const ContentDetail = () => {
   const [saveOn, setSaveOn] = useState(false);
 
   const saveClickHandler = () => {
     setSaveOn(!saveOn)
   }
+
   return (
     <>
       <Desktop>
-        <div className='classDetail'>
-          <div className='classDetailWrap'>
+        <div className='contentDetail'>
+          <div className='contentDetailWrap'>
             <div className='breadcrumbs'>
               <Link to="/" className='mobileDisplayNone'>
                 <i class='bx bx-chevron-left'></i>
@@ -128,8 +129,8 @@ const ClassDetail = () => {
       </Desktop>
   
       <Mobile>
-        <div className='classDetail'>
-          <div className='classDetailWrap'>
+        <div className='contentDetail'>
+          <div className='contentDetailWrap'>
             <div className='breadcrumbs'>
               <nav>
                 <i class='bx bx-home-alt-2'></i>
@@ -235,4 +236,4 @@ const ClassDetail = () => {
   )
 }
 
-export default ClassDetail
+export default ContentDetail

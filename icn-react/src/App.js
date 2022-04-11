@@ -15,7 +15,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Footer } from "components/footer/Footer";
 import FindPassword from "components/user/FindPassword";
-import ClassDetail from "components/subpages/classes/detail-pages/ClassDetail";
+import ClassDetail from "components/items/content-item/content-detail/ContentDetail";
 import TutorDetail from "components/items/tutor-item/TutorDetail";
 
 function App() {

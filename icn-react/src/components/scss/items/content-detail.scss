@@ -1,10 +1,10 @@
 @import 'commons/scss/var';
 
 // class detail page styling
-.classDetail {
+.contentDetail {
   @include webInlinePadding();
 
-  .classDetailWrap {
+  .contentDetailWrap {
     @include webMargin();
 
     .breadcrumbs {
@@ -163,13 +163,13 @@
           padding: 2rem;
           background-color: white;
           box-shadow: 0px 8px 64px rgba(16, 24, 40, 0.04);
-          color: $dark-grey-color;
 
           ul {
             padding: 0 2rem;
 
             li {
               list-style: disc;
+              color: $dark-grey-color;
             }
           }
         }
@@ -307,10 +307,10 @@
 @media (max-width: 1023px) {
 
   // class detail page styling
-  .classDetail {
+  .contentDetail {
     @include mobileInlinePadding();
 
-    .classDetailWrap {
+    .contentDetailWrap {
       width: 100%;
 
       .breadcrumbs {
