@@ -1,6 +1,6 @@
-import { ContentItem } from 'students/components/items/content-item/ContentItem'
+import { ContentItem } from 'commons/items/content-item/ContentItem'
 import { Link } from 'react-router-dom'
-import contents from 'students/components/items/content-item/contents.json'
+import contents from 'commons/items/content-item/contents.json'
 
 const ESLClass = ({title}) => {
   return (

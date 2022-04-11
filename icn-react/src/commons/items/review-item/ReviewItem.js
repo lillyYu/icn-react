@@ -1,5 +1,5 @@
 import React from 'react'
-import 'students/components/scss/items/review-item.scss';
+import 'commons/scss/items/review-item.scss';
 import StarRate from '../star-rating/StarRate';
 
 const ReviewItem = ({ student, tutor, rate, content }) => {

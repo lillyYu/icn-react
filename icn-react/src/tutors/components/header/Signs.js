@@ -4,7 +4,7 @@ export const Signs = () => {
   return(
     <div className="signs">
       <Link to="/tutors/sign-in">Sign in</Link>
-      <Link to="/tutors/sign-up">Sign up</Link>
+      <Link to="/tutors/sign-up">Become a tutor</Link>
     </div>
   )
 }

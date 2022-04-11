@@ -14,8 +14,8 @@ import { Class } from "students/components/subpages/classes/Class";
 import { Main } from "students/components/main/Main";
 
 import FindPassword from "students/components/user/FindPassword";
-import ClassDetail from "students/components/items/content-item/content-detail/ContentDetail";
-import TutorDetail from "students/components/items/tutor-item/tutor-detail/TutorDetail";
+import TutorDetail from "commons/items/tutor-item/tutor-detail/TutorDetail";
+import ContentDetail from 'commons/items/content-item/content-detail/ContentDetail';
 
 const StudentIndex = () => {
   return (
@@ -37,7 +37,7 @@ const StudentIndex = () => {
             <Route path="/find-password" element={<FindPassword />} />
   
             {/* Detail pages -------------------------------- */}
-            <Route path="/class/:className" element={<ClassDetail />} />
+            <Route path="/class/:className" element={<ContentDetail />} />
             <Route path="/tutor/:tutorId" element={<TutorDetail />} />
           </Routes>
         </div>

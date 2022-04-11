@@ -1,9 +1,9 @@
-import { TutorItem } from "students/components/items/tutor-item/TutorItem"
+import { TutorItem } from "commons/items/tutor-item/TutorItem"
 import { Link } from "react-router-dom"
 
 // slick slider
 import Slider from "react-slick";
-import tutors from 'students/components/items/tutor-item/tutors.json';
+import tutors from 'commons/items/tutor-item/tutors.json';
 
 export const ThisMonthTutor = (props) => {
 

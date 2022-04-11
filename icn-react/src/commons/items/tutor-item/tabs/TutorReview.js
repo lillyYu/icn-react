@@ -1,4 +1,4 @@
-import Stars from 'students/components/items/star-rating/Stars'
+import Stars from 'commons/items/star-rating/Stars'
 import React from 'react'
 
 const TutorReview = () => {

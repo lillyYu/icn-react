@@ -5,6 +5,7 @@ import student3 from 'commons/images/profile-sample2.jpg';
 import student4 from 'commons/images/profile-sample3.jpg';
 import Slider from 'react-slick/lib/slider';
 
+import 'commons/scss/items/recommend-review.scss';
 
 const RecommendReviews = ({title}) => {
   const [nav1, setNav1] = useState();

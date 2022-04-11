@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick/lib/slider'
-import reviews from 'students/components/items/review-item/reviews.json';
-import ReviewItem from 'students/components/items/review-item/ReviewItem';
+import reviews from 'commons/items/review-item/reviews.json';
+import ReviewItem from 'commons/items/review-item/ReviewItem';
 
 const StudentReviews = ({title}) => {
   // slick Options

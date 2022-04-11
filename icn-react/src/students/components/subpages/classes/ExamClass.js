@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import contents from 'students/components/items/content-item/contents.json'
-import { ContentItem } from 'students/components/items/content-item/ContentItem'
+import contents from 'commons/items/content-item/contents.json'
+import { ContentItem } from 'commons/items/content-item/ContentItem'
 
 const ExamClass = ({title}) => {
   return (

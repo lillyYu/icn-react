@@ -1,4 +1,4 @@
-import ServiceItem from 'students/components/items/service-item/ServiceItem'
+import ServiceItem from 'commons/items/service-item/ServiceItem'
 import React from 'react'
 
 const AfterClass = ({title}) => {

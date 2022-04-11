@@ -1,4 +1,4 @@
-import 'students/components/scss/items/tutor-item.scss';
+import 'commons/scss/items/tutor-item.scss';
 import StarRate from '../star-rating/StarRate';
 
 export const TutorItem = (props) => {

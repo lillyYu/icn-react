@@ -1,4 +1,4 @@
-import 'students/components/scss/items/content-item.scss';
+import 'commons/scss/items/content-item.scss';
 
 export const ContentItem = (props) => {
   return (

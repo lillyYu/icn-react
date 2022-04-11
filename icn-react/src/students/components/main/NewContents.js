@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import { ContentItem } from "../items/content-item/ContentItem";
 
-import contents from 'students/components/items/content-item/contents.json'
+import contents from 'commons/items/content-item/contents.json'
+import { ContentItem } from "commons/items/content-item/ContentItem"
 
 export const NewContents = (props) => {
   return(

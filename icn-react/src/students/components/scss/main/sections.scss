@@ -13,6 +13,10 @@
         font-size: 3.2rem;
         line-height: 4rem;
         color: $title-font-color;
+
+        strong {
+          color: $point-blue-color;
+        }
       }
 
       a {
@@ -144,11 +148,11 @@
       }
 
       &.thisMonthTutor,
-      &.newTutor{
+      &.newTutor {
         padding: 5.2rem 3%;
       }
 
-      &.newTutor{ 
+      &.newTutor {
         margin-bottom: 3rem;
       }
 
@@ -157,15 +161,15 @@
 
         article {
           @include flexCenterColumn();
-          
-          h3{
+
+          h3 {
             align-items: center;
           }
 
           img {
             width: 100%;
           }
-          
+
         }
       }
 

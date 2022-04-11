@@ -1,6 +1,6 @@
-import ServiceItem from 'students/components/items/service-item/ServiceItem'
 import React from 'react'
-import 'students/components/scss/items/service-item.scss'
+import 'commons/scss/items/service-item.scss'
+import ServiceItem from 'commons/items/service-item/ServiceItem'
 
 const OurService = ({title}) => {
   return (

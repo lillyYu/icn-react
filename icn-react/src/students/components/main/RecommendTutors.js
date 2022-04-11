@@ -1,8 +1,8 @@
-import { TutorItem } from "students/components/items/tutor-item/TutorItem";
+import { TutorItem } from "commons/items/tutor-item/TutorItem";
 import { Link } from "react-router-dom";
 import Slider from "react-slick/lib/slider";
 
-import tutors from 'students/components/items/tutor-item/tutors.json';
+import tutors from 'commons/items/tutor-item/tutors.json';
 
 export const RecommendTutors =(props) => {
   // slick Options

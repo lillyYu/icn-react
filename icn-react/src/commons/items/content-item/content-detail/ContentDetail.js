@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ContentItem } from 'students/components/items/content-item/ContentItem';
-import contents from 'students/components/items/content-item/contents.json'
+import { ContentItem } from 'commons/items/content-item/ContentItem';
+import contents from 'commons/items/content-item/contents.json'
 import ClassIncludes from './ClassIncludes';
 
 import profile from 'commons/images/person-example.jpg';
@@ -9,7 +9,7 @@ import cardIcon from 'commons/images/buy-course-icon.svg';
 import cardIconWhite from 'commons/images/buy-course-icon-white.svg';
 import { Desktop, Mobile } from 'commons/mediaqueries/MediaQuery';
 
-import 'students/components/scss/items/details/content-detail.scss';
+import 'commons/scss/items/details/content-detail.scss';
 
 const ContentDetail = () => {
   const [saveOn, setSaveOn] = useState(false);

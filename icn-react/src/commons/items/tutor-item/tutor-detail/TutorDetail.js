@@ -6,7 +6,7 @@ import StarRate from '../../star-rating/StarRate';
 import TutorIntro from '../tabs/TutorIntro';
 import TutorReview from '../tabs/TutorReview';
 
-import 'students/components/scss/items/details/tutor-detail.scss';
+import 'commons/scss/items/details/tutor-detail.scss';
 import { Desktop, Mobile } from 'commons/mediaqueries/MediaQuery';
 
 const TutorDetail = () => {
