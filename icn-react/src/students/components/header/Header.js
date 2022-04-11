@@ -4,9 +4,10 @@ import logoImg from 'commons/images/logo.svg';
 import { Nav } from "./Nav";
 import { Signs } from "./Signs";
 
-import '../scss/header/header.scss';
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
+import 'commons/scss/header/header.scss'
 
 export const Header = () => {
   const [hamburger, setHamburger] = useState(false);
@@ -14,6 +15,7 @@ export const Header = () => {
   const handleHamburgerCick = () => {
     setHamburger(!hamburger)
   }
+
   return(
     <>
       <Desktop>
