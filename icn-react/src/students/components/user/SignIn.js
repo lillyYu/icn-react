@@ -29,7 +29,7 @@ export const SignIn = () => {
           </div>
   
           <div className="alignRight">
-            <Link to="/find-password">Forgot Password?</Link>
+            <Link to="/students/find-password">Forgot Password?</Link>
           </div>
   
           <button>Sign in</button>
@@ -55,7 +55,7 @@ export const SignIn = () => {
         </div>
       </div>
       
-      <p>Don’t have account?<Link to="/sign-up"> Sign up</Link></p>
+      <p>Don’t have account?<Link to="/students/sign-up"> Sign up</Link></p>
     </div>
   )
 }

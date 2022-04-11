@@ -13,7 +13,7 @@ export const HowTo =() => {
             Design your own lessons<br/>
             <mark>wherever &amp; whenever</mark>
           </header>
-          <Link to="/sign-up" className="blueButton">Sign up now!</Link>
+          <Link to="/students/sign-up" className="blueButton">Sign up now!</Link>
         </div>
         <figure className="mobileDisplayNone">
           <img src={banner} alt="person typing"/>

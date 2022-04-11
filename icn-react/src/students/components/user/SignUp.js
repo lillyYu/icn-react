@@ -37,7 +37,7 @@ export const SignUp = () => {
         </form>
       </div>
 
-      <p>Have an account? <Link to="/sign-in">Sign in</Link></p>
+      <p>Have an account? <Link to="/students/sign-in">Sign in</Link></p>
     </div>
   )
 }

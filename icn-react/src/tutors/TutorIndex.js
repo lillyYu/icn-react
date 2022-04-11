@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Footer from './components/footer/Footer'
-import Header from './components/header/Header'
+import { Header } from '../students/components/header/Header'
+import { Footer } from './components/footer/Footer'
 import Main from './components/main/Main'
 
 const TutorIndex = () => {

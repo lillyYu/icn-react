@@ -11,7 +11,7 @@ const ServiceItem = ({ bg, icon, header, content, link }) => {
       <hr />
       <p>{content}</p>
       {
-        link && <Link to="/sign-up" className='lineButton'>
+        link && <Link to="/students/sign-up" className='lineButton'>
           Join now
           <span className="material-icons">arrow_forward</span>
         </Link>

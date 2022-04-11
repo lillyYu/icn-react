@@ -21,7 +21,7 @@ export const ImproveSkill = () => {
             <Link to="/" className="blueButton">Class register now!</Link>
           </h3>
     
-          <img src={spaceShip} alt="spaceship image" />
+          <img src={spaceShip} alt="spaceship" />
         </article>
       </div>
 

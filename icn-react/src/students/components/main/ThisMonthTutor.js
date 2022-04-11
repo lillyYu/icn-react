@@ -42,7 +42,7 @@ export const ThisMonthTutor = (props) => {
               tutors.map((tutor, index) => {
                 return(
                   <div className="slickSlides" key={index}>
-                    <Link to={`/tutor/${tutor.id}`}>
+                    <Link to={`/students/tutor/${tutor.id}`}>
                       <TutorItem 
                         id={tutor.id}
                         business={tutor.tags[0].name}

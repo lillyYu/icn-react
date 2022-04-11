@@ -26,7 +26,7 @@ export const Main = () => {
                   </p>
                 </div>
       
-                <Link to="/sign-up" className="blueButton">Class register now!</Link>
+                <Link to="/students/sign-up" className="blueButton">Class register now!</Link>
               </div>
               
               <figure>
@@ -65,7 +65,7 @@ export const Main = () => {
                   </p>
                 </div>
       
-                <Link to="/sign-up" className="blueButton">Class register now!</Link>
+                <Link to="/students/sign-up" className="blueButton">Class register now!</Link>
               </div>
               
               <figure>

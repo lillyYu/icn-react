@@ -1,4 +1,3 @@
-import { Desktop } from "commons/mediaqueries/MediaQuery"
 import { Link } from "react-router-dom";
 import '../scss/footer/footer.scss';
 
@@ -15,7 +14,7 @@ export const Footer = () => {
             <p>
               The most complete online learning solution
             </p>
-            <Link to='/sign-up' className="whiteButton">Sign up now</Link>
+            <Link to='/students/sign-up' className="whiteButton">Sign up now</Link>
           </div>
   
           <div className="footerRight">

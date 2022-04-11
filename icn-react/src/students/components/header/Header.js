@@ -1,4 +1,4 @@
-import { Desktop, Mobile, Tablet } from "commons/mediaqueries/MediaQuery"
+import { Desktop, Mobile } from "commons/mediaqueries/MediaQuery"
 
 import logoImg from 'commons/images/logo.svg';
 import { Nav } from "./Nav";
@@ -20,7 +20,7 @@ export const Header = () => {
         <header className="webHeader">
           <div className="webHeaderWrap">
             <div className="headerLeft">
-              <Link to="/" className="active">
+              <Link to="/students" className="active">
                 <img src={logoImg} alt="ICN 로고 이미지"/>
               </Link>
     
@@ -33,12 +33,12 @@ export const Header = () => {
 
       <Mobile>
         <header className="mobileHeader">
-          <Link to="/" className="active">
+          <Link to="/students" className="active">
             <img src={logoImg} alt="ICN 로고 이미지"/>
           </Link>
   
           <div className="mobileHeaderRight">
-            <Link to="/sign-up">Sign up</Link>
+            <Link to="/students/sign-up">Sign up</Link>
   
             <div className={hamburger ? "hamburger active" : "hamburger"} onClick={handleHamburgerCick}>
               <span></span>

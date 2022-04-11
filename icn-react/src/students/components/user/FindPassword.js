@@ -53,7 +53,7 @@ const FindPassword = () => {
       }
 
 
-      <p>Remember your password? <Link to="/sign-in">Sign in</Link></p>
+      <p>Remember your password? <Link to="/students/sign-in">Sign in</Link></p>
     </div>
   )
 }

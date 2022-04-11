@@ -20,7 +20,7 @@ export const NewContents = (props) => {
             contents.slice(0, 3).map((content, index) => {
               return(
                 <div key={index} className="contentItemWrap">
-                  <Link to={`/class/${content.title}`}>
+                  <Link to={`/students/class/${content.title}`}>
                     <ContentItem
                       id={content.id}
                       thumbnail={content.thumbnail}
