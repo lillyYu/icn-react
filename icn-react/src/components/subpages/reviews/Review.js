@@ -3,6 +3,7 @@ import StudentReviews from 'components/subpages/what-is/StudentReviews';
 import RecommendReviews from './RecommendReviews';
 
 export const Review =() => {
+
   return(
     <div className="subpageStyling review">
       <main className="subMain">
@@ -20,7 +21,6 @@ export const Review =() => {
           <img src={banner} alt="person typing"/>
         </figure>
       </main>
-
       <RecommendReviews title="Recommend Reviews"/>
       <StudentReviews title="Student Reviews"/>
     </div>
