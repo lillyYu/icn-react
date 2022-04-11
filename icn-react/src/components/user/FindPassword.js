@@ -2,12 +2,15 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const FindPassword = () => {
-  const [next, setNext] = useState(false);
-  const nextHandler = () => {
+  const [next, setNext] = useState(true);
+
+  const nextHandler = (e) => {
+    e.preventDefault();
     setNext(false)
   }
 
-  const prevHandler =() => {
+  const prevHandler =(e) => {
+    e.preventDefault();
     setNext(true)
   }
   

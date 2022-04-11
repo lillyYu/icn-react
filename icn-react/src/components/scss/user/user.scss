@@ -46,6 +46,7 @@ h1.userHeader {
 
           &::placeholder {
             font-size: 1.4rem;
+            color: $grey-font-color;
           }
 
           &:active,
@@ -143,9 +144,7 @@ h1.userHeader {
         }
       }
     }
-
   }
-
 
   &>p {
     margin-bottom: 5.2rem;
@@ -155,6 +154,45 @@ h1.userHeader {
     a {
       font-weight: $bold-font-weight;
       color: $point-blue-color;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+
+  h1.userHeader {
+    margin-top: 2.8rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+
+  .sign {
+    width: 100%;
+    padding-inline: 3%;
+    margin: 0;
+
+    .inputWrap {
+      .signInWith {
+        margin-bottom: 12rem;
+
+        &>p {
+
+          &::before,
+          &::after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            height: 0.1rem;
+            width: 30%;
+            background-color: $input-border-color;
+          }
+        }
+
+        ul {
+          flex-direction: column;
+          gap: 1.6rem 0;
+        }
+      }
     }
   }
 }
