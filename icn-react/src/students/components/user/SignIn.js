@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import 'students/components/scss/user/user.scss';
 import googleIcon from 'commons/images/google-icon.svg';
 import appleIcon from 'commons/images/apple-icon.svg';
 import kakaoIcon from 'commons/images/kakao-icon.svg';

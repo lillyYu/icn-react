@@ -7,8 +7,8 @@ import AboutUs from './components/subpages/about-us/AboutUs'
 import Faq from './components/subpages/faq/Faq'
 import PrivacyPolicy from './components/subpages/privacy-policy/PrivacyPolicy'
 import FindPassword from './components/user/FindPassword'
-import SignIn from './components/user/SignIn'
-import SignUp from './components/user/SignUp'
+import { SignIn } from './components/user/SignIn'
+import { SignUp } from './components/user/SignUp'
 
 const TutorIndex = () => {
   return (

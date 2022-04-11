@@ -17,11 +17,57 @@ h1.userHeader {
   justify-content: space-between;
 
   .inputWrap {
+
+    &>p {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      color: $grey-font-color;
+    }
+
     form {
       margin: 4.8rem 0 4rem;
 
       &>div {
         margin-bottom: 2.4rem;
+
+        &.checkboxWrap{
+          @include flexAlignCenter();
+          gap: 0 1.2rem;
+          
+          input[type="checkbox"] {
+            display: none;
+
+            &+label{
+              position: relative;
+
+              span {
+                margin-left: 3rem;
+                margin-bottom: 0;
+                line-height: 1.8rem;
+              }
+              &::before {
+                position: absolute;
+                content: '';
+                background: url(../../images/checkbox.svg);
+                width: 2rem;
+                height: 2rem;
+              }
+            }
+
+            &:checked + label{
+
+              &::before {
+                content: '';
+                background: url(../../images/checkbox-checked.svg);
+                top: 0;
+              }
+            }
+            
+          }
+
+        }
 
         label {
           display: block;
@@ -34,7 +80,9 @@ h1.userHeader {
           }
         }
 
-        input {
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
           display: block;
           outline: none;
           width: 100%;
