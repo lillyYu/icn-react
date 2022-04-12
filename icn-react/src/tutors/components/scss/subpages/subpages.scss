@@ -1,10 +1,36 @@
 @import 'commons/scss/var';
 
 .privacyPolicy {
-  h1{
+  padding: 4.4rem 0;
+
+  h1 {
+    margin-bottom: 4rem;
     font-size: 3.6rem;
     line-height: 4.4rem;
     font-weight: $bold-font-weight;
     text-align: center;
+  }
+
+  article {
+    margin-bottom: 4rem;
+
+    h2 {
+      font-weight: $bold-font-weight;
+    }
+
+    h3 {
+      font-weight: $bold-font-weight;
+      text-transform: uppercase;
+      margin-bottom: 2.4rem;
+    }
+
+    time {
+      display: block;
+      margin-bottom: 2.4rem;
+    }
+
+    p {
+      margin-bottom: 2.4rem;
+    }
   }
 }
