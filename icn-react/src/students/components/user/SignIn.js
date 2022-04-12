@@ -6,11 +6,11 @@ import kakaoIcon from 'commons/images/kakao-icon.svg';
 export const SignIn = () => {
   return(
     <div className="sign">
-      <div className="inputWrap">
+      <div className="signWrap">
         <h1 className="userHeader">Sign In</h1>
   
         <form>
-          <div>
+          <div className="inputLabel">
             <label htmlFor="email">Email address (ID) <strong>*</strong></label>
             <input 
               type="email"
@@ -18,7 +18,7 @@ export const SignIn = () => {
               placeholder="Your email"
             />
           </div>
-          <div>
+          <div className="inputLabel">
             <label htmlFor="password">Password (ID) <strong>*</strong></label>
             <input 
               type="password"
@@ -27,7 +27,7 @@ export const SignIn = () => {
             />
           </div>
   
-          <div className="alignRight">
+          <div className="alignRight forgotPassword">
             <Link to="/students/find-password">Forgot Password?</Link>
           </div>
   

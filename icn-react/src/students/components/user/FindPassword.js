@@ -17,11 +17,11 @@ const FindPassword = () => {
   return (
     <div className="sign">
       { next ?
-        <div className='inputWrap'>
+        <div className='signWrap'>
           <h1 className="userHeader">Sign up with email</h1>
     
           <form>
-            <div>
+            <div className='inputLabel'>
               <label htmlFor="email">Email address (ID) <strong>*</strong></label>
               <input 
                 type="email"
@@ -34,11 +34,11 @@ const FindPassword = () => {
           </form>
         </div>
         :
-        <div className='inputWrap'>
+        <div className='signWrap'>
           <h1 className="userHeader">Sign up with email</h1>
     
           <form>
-            <div>
+            <div className='inputLabel'>
               <label htmlFor="email">Enter security code <strong>*</strong></label>
               <input 
                 type="email"

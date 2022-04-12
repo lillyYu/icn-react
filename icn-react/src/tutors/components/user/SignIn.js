@@ -8,7 +8,7 @@ import 'commons/scss/user/user.scss';
 export const SignIn = () => {
   return(
     <div className="sign">
-      <div className="inputWrap">
+      <div className="signWrap">
         <h1 className="userHeader">Sign In</h1>
   
         <form>
@@ -30,7 +30,7 @@ export const SignIn = () => {
           </div>
   
           <div className="alignRight">
-            <Link to="/students/find-password">Forgot Password?</Link>
+            <Link to="/tutors/find-password">Forgot Password?</Link>
           </div>
   
           <button>Sign in</button>
@@ -56,7 +56,7 @@ export const SignIn = () => {
         </div>
       </div>
       
-      <p>Don’t have account?<Link to="/students/sign-up"> Sign up</Link></p>
+      <p>Don’t have account?<Link to="/tutors/sign-up"> Sign up</Link></p>
     </div>
   )
 }

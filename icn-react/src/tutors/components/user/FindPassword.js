@@ -17,7 +17,7 @@ const FindPassword = () => {
   return (
     <div className="sign">
       { next ?
-        <div className='inputWrap'>
+        <div className='signWrap'>
           <h1 className="userHeader">Sign up with email</h1>
     
           <form>
@@ -34,7 +34,7 @@ const FindPassword = () => {
           </form>
         </div>
         :
-        <div className='inputWrap'>
+        <div className='signWrap'>
           <h1 className="userHeader">Sign up with email</h1>
     
           <form>

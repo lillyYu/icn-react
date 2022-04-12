@@ -10,6 +10,8 @@ import PrivacyPolicy from './components/subpages/privacy-policy/PrivacyPolicy'
 import FindPassword from './components/user/FindPassword'
 import { SignIn } from './components/user/SignIn'
 import { SignUp } from './components/user/SignUp'
+import TutorInformation from './components/user/TutorInformation'
+import VerifyEmail from './components/user/VerifyEmail'
 
 const TutorIndex = () => {
   return (
@@ -28,6 +30,8 @@ const TutorIndex = () => {
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/find-password" element={<FindPassword />} />
+          <Route path="/verify" element={<VerifyEmail />} />
+          <Route path="/information" element={<TutorInformation />} />
 
           {/* Detail pages -------------------------------- */}
           <Route path="/faq/:topicName" element={<TopicDetail />} />
