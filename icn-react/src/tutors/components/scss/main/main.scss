@@ -6,96 +6,96 @@
   .mainBanner {
     background-color: transparent;
   }
-}
 
-// sections styling
+  // sections styling
 
-section {
-  margin: 10rem 0;
+  section {
+    margin: 10rem 0;
 
-  &.ourHome {
-    padding: 0 5%;
+    &.ourHome {
+      padding: 0 10%;
 
-    &>div {
-      background-color: $light-blue-color;
-      border-radius: 2.4rem;
-      padding: 5rem 8rem;
-    }
-  }
-
-  &.flexibility {
-    article {
-      .video {
-        position: relative;
-        width: 100%;
-        height: 52rem;
+      &>.bgWrap {
+        background-color: $light-blue-color;
         border-radius: 2.4rem;
-        overflow: hidden;
+        padding: 5rem 8rem;
+      }
+    }
 
-        iframe {
-          position: absolute;
+    &.flexibility {
+      article {
+        .video {
+          position: relative;
           width: 100%;
-          height: 100%;
+          height: 52rem;
+          border-radius: 2.4rem;
+          overflow: hidden;
+
+          iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }
-  }
 
-  &.threeSteps {
-    .threeStepsWrap {
-      article {
-        @include flexCenterBetween();
-        gap: 0 10rem;
+    &.threeSteps {
+      .threeStepsWrap {
+        article {
+          @include flexCenterBetween();
+          gap: 0 10rem;
 
-        div {
-          header {
-            margin-bottom: 1.6rem;
-            font-weight: $bold-font-weight;
-            font-size: 4.4rem;
-            line-height: 5.2rem;
-            color: $point-blue-color;
+          div {
+            header {
+              margin-bottom: 1.6rem;
+              font-weight: $bold-font-weight;
+              font-size: 4.4rem;
+              line-height: 5.2rem;
+              color: $point-blue-color;
+            }
+
+            p {
+              font-size: 2rem;
+              line-height: 2.8rem;
+            }
           }
+        }
+
+        .divider {
+          height: 10rem;
+
+          &.left {
+            background: url('../../../../commons/images/how-to-divider-left.png') no-repeat;
+            background-position: center;
+          }
+
+          &.right {
+            background: url('../../../../commons/images/how-to-divider-right.png') no-repeat;
+            background-position: center;
+          }
+        }
+      }
+    }
+
+    &.diverse {
+
+      &>div {
+        @include flexCenterBetween();
+
+        .sectionTitle {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
 
           p {
-            font-size: 2rem;
-            line-height: 2.8rem;
+            width: 42rem;
+            margin-top: 1.6rem;
           }
         }
       }
 
-      .divider {
-        height: 10rem;
-
-        &.left {
-          background: url('../../../../commons/images/how-to-divider-left.png') no-repeat;
-          background-position: center;
-        }
-
-        &.right {
-          background: url('../../../../commons/images/how-to-divider-right.png') no-repeat;
-          background-position: center;
-        }
-      }
     }
-  }
-
-  &.diverse {
-
-    &>div {
-      @include flexCenterBetween();
-
-      .sectionTitle {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-  
-        p {
-          width: 42rem;
-          margin-top: 1.6rem;
-        }
-      }
-    }
-    
   }
 }
