@@ -73,7 +73,7 @@ const TopicDetail = () => {
 
               <main>
                 <header>
-                  How can I turn on my notifications for lesson alerts?
+                  {faqTabs[currentTab].question}
                 </header>
 
                 <time>2 days ago</time>
