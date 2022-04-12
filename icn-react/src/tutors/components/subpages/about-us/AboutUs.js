@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
-    <div className="subpageStyling whatIs">
+    <div className="subpageStyling">
       <main className="subMain">
         <div>
           <p>About us</p>

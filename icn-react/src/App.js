@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import TutorIndex from "tutors/TutorIndex";
 import StudentIndex from "students/StudentIndex";
 import Links from "Links";
+import 'tutors/components/scss/subpages/subpages.scss'
 
 function App() {
   return (
