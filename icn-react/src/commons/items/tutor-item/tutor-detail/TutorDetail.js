@@ -28,13 +28,13 @@ const TutorDetail = () => {
           <div className='tutorDetailWrap'>
             <div className='breadcrumbs'>
               <Link to="/">
-                <i class='bx bx-chevron-left'></i>
+                <i className='bx bx-chevron-left'></i>
                 <span>Back</span>
               </Link>
               <nav>
-                <i class='bx bx-home-alt-2'></i>
+                <i className='bx bx-home-alt-2'></i>
                 <span>Home</span>
-                <i class='bx bx-chevron-right'></i>
+                <i className='bx bx-chevron-right'></i>
                 <span>Tutor name</span>
               </nav>
             </div>
@@ -96,9 +96,9 @@ const TutorDetail = () => {
           <div className='tutorDetailWrap'>
             <div className='breadcrumbs'>
               <nav>
-                <i class='bx bx-home-alt-2'></i>
+                <i className='bx bx-home-alt-2'></i>
                 <span>Home</span>
-                <i class='bx bx-chevron-right'></i>
+                <i className='bx bx-chevron-right'></i>
                 <span>Tutor name</span>
               </nav>
             </div>

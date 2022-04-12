@@ -25,13 +25,13 @@ const ContentDetail = () => {
           <div className='contentDetailWrap'>
             <div className='breadcrumbs'>
               <Link to="/" className='mobileDisplayNone'>
-                <i class='bx bx-chevron-left'></i>
+                <i className='bx bx-chevron-left'></i>
                 <span>Back</span>
               </Link>
               <nav>
-                <i class='bx bx-home-alt-2'></i>
+                <i className='bx bx-home-alt-2'></i>
                 <span>Class</span>
-                <i class='bx bx-chevron-right'></i>
+                <i className='bx bx-chevron-right'></i>
                 <span>Class name</span>
               </nav>
             </div>
@@ -54,7 +54,7 @@ const ContentDetail = () => {
                   </div>
     
                   <button type='button' className={saveOn ? "active" : null} onClick={saveClickHandler}>
-                    <i class='bx bx-heart'></i>
+                    <i className='bx bx-heart'></i>
                     <span>Save</span>
                   </button>
                 </div>
@@ -112,7 +112,7 @@ const ContentDetail = () => {
       
                   <button className='addToCart'>
                     Add to cart
-                    <i class='bx bx-cart'></i>
+                    <i className='bx bx-cart'></i>
                   </button>
       
                   <button className='buyCourse'>
@@ -133,9 +133,9 @@ const ContentDetail = () => {
           <div className='contentDetailWrap'>
             <div className='breadcrumbs'>
               <nav>
-                <i class='bx bx-home-alt-2'></i>
+                <i className='bx bx-home-alt-2'></i>
                 <span>Class</span>
-                <i class='bx bx-chevron-right'></i>
+                <i className='bx bx-chevron-right'></i>
                 <span>Class name</span>
               </nav>
             </div>
@@ -162,7 +162,7 @@ const ContentDetail = () => {
                   </div>
     
                   <button type='button' className={saveOn ? "active" : null} onClick={saveClickHandler}>
-                    <i class='bx bx-heart'></i>
+                    <i className='bx bx-heart'></i>
                     <span>Save</span>
                   </button>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import topics from './details/topics.json';
 
 const TopicList = ({title}) => {
   return (
@@ -8,16 +9,22 @@ const TopicList = ({title}) => {
         <h2 className="sectionTitle">{title}</h2>
 
         <article>
-          <Link to="">The Star-strike system</Link>
-          <Link to="">Promotion Points  &amp; Level</Link>
-          <Link to="">Compensation &amp; Payment</Link>
-          <Link to="">Feedback Report</Link>
-          <Link to="">Lessons</Link>
-          <Link to="">Tech Issues</Link>
-          <Link to="">New Tutor &amp; Tutoring Advice</Link>
-          <Link to="">The Site &amp; Profile</Link>
-          <Link to="">Addtional Opportunities</Link>
-          <Link to="">Contact Us</Link>
+          {
+            topics.map((topic) => {
+              return(
+                <div key={topic.id} className="topicItemWrap">
+                  
+                  <Link to={{
+                      pathname:`/tutors/faq/${topic.topicName}`,
+                      props: {topicName : topic.topicName}                     
+                    }}>
+                    {topic.topicName}
+                  </Link>
+                </div>
+                )
+              }
+            )
+          }
         </article>
       </div>
     </section>

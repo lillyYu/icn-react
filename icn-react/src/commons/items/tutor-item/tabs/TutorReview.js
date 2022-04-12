@@ -77,7 +77,7 @@ const TutorReview = () => {
             </li>
           </ul>
           <button>
-            <i class='bx bx-chevron-down'></i>
+            <i className='bx bx-chevron-down'></i>
             Show more feedbacks
           </button>
         </div>

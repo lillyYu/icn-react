@@ -26,7 +26,7 @@ function Stars ({rate}) {
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
       </ul>
     )
   } else if( 3 < rate < 4 ) {
@@ -36,7 +36,7 @@ function Stars ({rate}) {
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star-half'></i></li>
-        <li><i class='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
       </ul>
     )
   } else if (rate === 3) {
@@ -45,8 +45,8 @@ function Stars ({rate}) {
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
       </ul>
     )
   } else if (2 < rate < 3) {
@@ -55,8 +55,8 @@ function Stars ({rate}) {
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star-half'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
       </ul>
     )
   } else if (rate === 2) {
@@ -64,9 +64,9 @@ function Stars ({rate}) {
       <ul className='stars'>
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
       </ul>
     )
   } else if (1 < rate < 2) {
@@ -74,19 +74,19 @@ function Stars ({rate}) {
       <ul className='stars'>
         <li><i className='bx bxs-star'></i></li>
         <li><i className='bx bxs-star-half'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
       </ul>
     )
   } else {
     return(
       <ul className='stars'>
         <li><i className='bx bxs-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
-        <li><i class='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
+        <li><i className='bx bx-star'></i></li>
       </ul>
     )
   }

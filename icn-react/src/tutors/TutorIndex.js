@@ -4,6 +4,7 @@ import { Footer } from './components/footer/Footer'
 import { Header } from './components/header/Header'
 import Main from './components/main/Main'
 import AboutUs from './components/subpages/about-us/AboutUs'
+import TopicDetail from './components/subpages/faq/details/TopicDetail'
 import Faq from './components/subpages/faq/Faq'
 import PrivacyPolicy from './components/subpages/privacy-policy/PrivacyPolicy'
 import FindPassword from './components/user/FindPassword'
@@ -29,6 +30,7 @@ const TutorIndex = () => {
           <Route path="/find-password" element={<FindPassword />} />
 
           {/* Detail pages -------------------------------- */}
+          <Route path="/faq/:topicName" element={<TopicDetail />} />
         </Routes>
       </div>
 
