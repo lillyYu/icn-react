@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "profile": "images/profile-sample1.jpg",
+    "profile": "../images/profile-sample1.jpg",
     "tags": [{
       "id": 1,
       "name": "business",
@@ -20,7 +20,7 @@
   },
   {
     "id": 2,
-    "profile": "images/profile-sample2.jpg",
+    "profile": "../images/profile-sample2.jpg",
     "tags": [{
       "id": 1,
       "name": "business",
@@ -39,7 +39,7 @@
   },
   {
     "id": 3,
-    "profile": "images/profile-sample3.jpg",
+    "profile": "../images/profile-sample3.jpg",
     "tags": [{
       "id": 1,
       "name": "business",
@@ -58,7 +58,7 @@
   },
   {
     "id": 4,
-    "profile": "images/profile-sample4.jpg",
+    "profile": "../images/profile-sample4.jpg",
     "tags": [{
       "id": 1,
       "name": "business",
@@ -77,7 +77,7 @@
   },
   {
     "id": 5,
-    "profile": "images/profile-sample5.jpg",
+    "profile": "../images/profile-sample5.jpg",
     "tags": [{
       "id": 1,
       "name": "business",
@@ -96,7 +96,7 @@
   },
   {
     "id": 6,
-    "profile": "images/profile-sample6.jpg",
+    "profile": "../images/profile-sample6.jpg",
     "tags": [{
       "id": 1,
       "name": "business",
@@ -115,7 +115,7 @@
   },
   {
     "id": 7,
-    "profile": "images/profile-sample7.jpg",
+    "profile": "../images/profile-sample7.jpg",
     "tags": [{
       "id": 1,
       "name": "business",
@@ -134,7 +134,7 @@
   },
   {
     "id": 8,
-    "profile": "images/profile-sample8.jpg",
+    "profile": "../images/profile-sample8.jpg",
     "tags": [{
       "id": 1,
       "name": "business",
