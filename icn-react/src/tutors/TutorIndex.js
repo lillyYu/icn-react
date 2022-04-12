@@ -28,7 +28,7 @@ const TutorIndex = () => {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/find-password" element={<FindPassword />} />
 
-          
+          {/* Detail pages -------------------------------- */}
         </Routes>
       </div>
 
