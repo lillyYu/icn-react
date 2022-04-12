@@ -1,9 +1,12 @@
 import banner from 'commons/images/sub-banner4.jpg';
 import { Link } from 'react-router-dom';
+import JoinUsToday from './JoinUsToday';
+import OurHistory from './OurHistory';
+import OurValue from './OurValue';
 
 const AboutUs = () => {
   return (
-    <div className="subpageStyling">
+    <div className="subpageStyling aboutUs">
       <main className="subMain">
         <div>
           <p>About us</p>
@@ -19,6 +22,9 @@ const AboutUs = () => {
         </figure>
       </main>
 
+      <OurHistory title="Our history"/>
+      <OurValue title="Our value"/>
+      <JoinUsToday title="Join us today"/>
     </div>
   )
 }

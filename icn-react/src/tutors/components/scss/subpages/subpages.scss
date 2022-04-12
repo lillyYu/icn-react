@@ -1,5 +1,89 @@
 @import 'commons/scss/var';
 
+// about us styling
+.aboutUs {
+  .ourHistory {
+    padding: 10rem 0;
+
+    article {
+      @include flexCenterBetween();
+
+      .ourHistoryLeft {
+        width: 55rem;
+
+        h3 {
+          margin-bottom: 2.4rem;
+          font-weight: $medium-font-weight;
+          font-size: 2.8rem;
+          line-height: 3.6rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+          color: $grey-font-color;
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+        }
+
+        a {
+          color: $point-blue-color;
+          font-size: 1.4rem;
+          @include flexAlignCenter();
+          font-weight: $medium-font-weight;
+
+          span {
+            font-size: 2rem;
+            vertical-align: middle
+          }
+        }
+      }
+
+      figure {
+        @include imageAlignCenter();
+        width: 48rem;
+        height: 32.4rem;
+        border-radius: 1.2rem;
+      }
+    }
+  }
+
+  .ourValue {
+    padding: 0 10%;
+  }
+
+  .joinUsToday {
+    padding: 10rem 0;
+
+    article {
+      @include flexCenterBetween();
+
+      &>div {
+        width: 45.6rem;
+        h2 {
+          margin-bottom: 2.4rem;
+          font-size: 4.4rem;
+          font-weight: $bold-font-weight;
+          line-height: 5.2rem;
+        }
+
+        p {
+          margin-bottom: 2.4rem;
+          color: $grey-font-color;
+          font-size: 2rem;
+          line-height: 2.8rem;
+        }
+
+        a {
+          width: 24.4rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+// privacy policy styling
 .privacyPolicy {
   padding: 4.4rem 0;
 
