@@ -19,6 +19,93 @@ h1.userHeader {
   .signWrap {
     margin-bottom: 2.4rem;
 
+    .signProcess {
+      width: 50rem;
+      margin: 5.6rem auto;
+
+      ul {
+        @include flexCenterBetween();
+
+        li {
+          @include alignCenter();
+          position: relative;
+          width: 5.2rem;
+          height: 5.2rem;
+          border-radius: 50%;
+          background-color: #EFEFEF;
+
+          &:nth-of-type(1) {
+            &::after {
+              content: 'Profile info';
+            }
+          }
+
+          &:nth-of-type(2) {
+            &::after {
+              content: 'Education info';
+            }
+
+            &::before {
+              content: '';
+              position: absolute;
+              width: 20rem;
+              height: 2px;
+              background-color: $input-border-color;
+              top: 50%;
+              right: 5rem;
+              z-index: -1;
+            }
+          }
+
+          &:nth-of-type(3) {
+            &::after {
+              content: 'Bank info';
+            }
+
+            &::before {
+              content: '';
+              position: absolute;
+              width: 20rem;
+              height: 2px;
+              background-color: $input-border-color;
+              top: 50%;
+              right: 5rem;
+              z-index: -1;
+            }
+          }
+
+          &::after {
+            position: absolute;
+            font-size: 1.6rem;
+            bottom: -3rem;
+            width: 12rem;
+            text-align: center;
+          }
+
+          i {
+            font-size: 3.2rem;
+            color: $light-grey-color;
+          }
+
+          &.active {
+            background-color: $point-blue-color;
+
+            i {
+              color: white;
+            }
+          }
+
+          &.done {
+            background-color: #EDF4FF;
+            border: 2px solid $point-blue-color;
+            i {
+              color: $point-blue-color;
+            }
+          }
+        }
+      }
+    }
+
     &>p {
       width: 56rem;
       text-align: center;
@@ -33,6 +120,7 @@ h1.userHeader {
 
       .forgotPassword {
         margin-bottom: 2.4rem;
+
         a {
           display: inline-block;
           font-size: 1.4rem;
@@ -42,7 +130,7 @@ h1.userHeader {
         }
       }
 
-      button,
+      &>button,
       .nextButton {
         display: block;
         width: 100%;
