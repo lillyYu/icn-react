@@ -8,10 +8,13 @@ export const SignUp = () => {
           Enter your current university email address
         </h1>
 
-        <p>
-          If you have already graduated and no longer have access to a university email address, <br/>
-          please enter your current email address and check "I am no longer a student."
-        </p>
+        <div className="signUpText">
+          <p>
+            If you have already graduated and no longer have access to a university email address, </p>
+          <p>
+            please enter your current email address and check "I am no longer a student."
+          </p>
+        </div>
 
         <form>
           <div className="inputLabel">

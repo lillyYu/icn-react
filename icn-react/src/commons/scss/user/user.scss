@@ -20,7 +20,8 @@ h1.userHeader {
     margin-bottom: 2.4rem;
 
     .signProcess {
-      width: 50rem;
+      max-width: 50rem;
+      width: 100%;
       margin: 5.6rem auto;
 
       ul {
@@ -44,32 +45,24 @@ h1.userHeader {
             &::after {
               content: 'Education info';
             }
-
-            &::before {
-              content: '';
-              position: absolute;
-              width: 20rem;
-              height: 2px;
-              background-color: $input-border-color;
-              top: 50%;
-              right: 5rem;
-              z-index: -1;
-            }
           }
 
           &:nth-of-type(3) {
             &::after {
               content: 'Bank info';
             }
+          }
 
+          &:nth-of-type(1),
+          &:nth-of-type(2) {
             &::before {
               content: '';
               position: absolute;
-              width: 20rem;
+              width: 17.2rem;
               height: 2px;
               background-color: $input-border-color;
               top: 50%;
-              right: 5rem;
+              left: 5rem;
               z-index: -1;
             }
           }
@@ -98,6 +91,11 @@ h1.userHeader {
           &.done {
             background-color: #EDF4FF;
             border: 2px solid $point-blue-color;
+
+            &::before {
+              background-color: $point-blue-color
+            }
+
             i {
               color: $point-blue-color;
             }
@@ -106,13 +104,16 @@ h1.userHeader {
       }
     }
 
-    &>p {
+    .signUpText {
       width: 56rem;
-      text-align: center;
       margin-top: 2rem;
-      font-size: 1.4rem;
-      line-height: 2.4rem;
-      color: $grey-font-color;
+      text-align: center;
+
+      p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $grey-font-color;
+      }
     }
 
     form {
@@ -236,6 +237,44 @@ h1.userHeader {
   }
 }
 
+@media (max-width: 450px) {
+  .sign {
+    .signWrap {
+      .signProcess {
+        ul {
+          li {
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+              &::before {
+                width: 12rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width:1023) {
+  .sign {
+    .signWrap {
+      .signProcess {
+        ul {
+          li {
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+              &::before {
+                width: 15rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1023px) {
 
   h1.userHeader {
@@ -250,6 +289,15 @@ h1.userHeader {
     margin: 0;
 
     .signWrap {
+
+      .signProcess{
+        padding: 0 3%;
+      }
+
+      .signUpText {
+        width: 100%;
+      }
+
       .signInWith {
         margin-bottom: 12rem;
 

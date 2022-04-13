@@ -10,9 +10,9 @@ const TutorInformation = () => {
     <div className='sign'>
       {/* <ProfileInformation /> */}
 
-      {/* <EducationInformation /> */}
+      <EducationInformation />
 
-      <BankInformation />
+      {/* <BankInformation /> */}
     </div>
   )
 }
