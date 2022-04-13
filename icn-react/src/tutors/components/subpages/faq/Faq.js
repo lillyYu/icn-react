@@ -12,7 +12,7 @@ const Faq = () => {
             questions &amp; topics
           </header>
 
-          <p className='mainParagraph'>
+          <p className='mainParagraph mobileDisplayNone'>
             The best and lagest online tutoring application in Korea.
             The most complete online learning solution
           </p>

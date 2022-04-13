@@ -45,7 +45,7 @@ const EducationInformation = () => {
           <h2>Diploma file</h2>
           <div className='fileUpload'>
             <i class='bx bx-cloud-upload' ></i>
-            <p>Draf or upload your diploma file here</p>
+            <p><div className='mobileDisplayNone'>Drag or </div>upload your diploma file here</p>
             <input 
               type="file"
             />
