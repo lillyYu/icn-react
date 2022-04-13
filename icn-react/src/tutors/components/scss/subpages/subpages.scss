@@ -264,36 +264,19 @@
 
   // privacy policy styling
   .privacyPolicy {
-    padding: 4.4rem 0;
+    padding: 2.8rem 3%;
 
     h1 {
-      margin-bottom: 4rem;
-      font-size: 3.6rem;
-      line-height: 4.4rem;
-      font-weight: $bold-font-weight;
-      text-align: center;
+      margin-bottom: 2.4rem;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
     }
 
     article {
-      margin-bottom: 4rem;
-
-      h2 {
-        font-weight: $bold-font-weight;
-      }
-
-      h3 {
-        font-weight: $bold-font-weight;
-        text-transform: uppercase;
-        margin-bottom: 2.4rem;
-      }
-
-      time {
-        display: block;
-        margin-bottom: 2.4rem;
-      }
+      margin-bottom: 3.2rem;
 
       p {
-        margin-bottom: 2.4rem;
+        margin-bottom: 1.6rem;
       }
     }
   }
