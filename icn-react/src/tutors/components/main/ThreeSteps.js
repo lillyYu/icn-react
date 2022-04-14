@@ -21,7 +21,7 @@ const ThreeSteps = () => {
               </figure>
     
               <div>
-                <header>Step 1. Sumbit an application</header>
+                <header>Step 1. Submit an application</header>
                 <p>
                   Frank knew there was a correct time and place to reveal his secret and this wasn't it. The issue was that the secret might be revealed despite his best attempt to keep it from coming out.
                 </p>

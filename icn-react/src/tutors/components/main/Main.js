@@ -5,7 +5,6 @@ import OwnHome from './OwnHome';
 import 'tutors/components/scss/main/main.scss';
 import Flexibility from './Flexibility';
 import ThreeSteps from './ThreeSteps';
-import RecommendReviews from 'students/components/subpages/reviews/RecommendReviews';
 import Diverse from './Diverse';
 const Main = () => {
   return (

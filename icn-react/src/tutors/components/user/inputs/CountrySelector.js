@@ -14,10 +14,7 @@ function CountrySelector() {
     options={options} 
     value={value} 
     onChange={changeHandler}
-    styles={{
-      border: "1px solid red",
-      background: 'pink'
-    }}
+    styles={{border: '1px solid pink'}}
   />
 }
 
