@@ -1,21 +1,8 @@
 import React from 'react'
 
-const EducationInformation = () => {
+const EducationInformation = ({handleNext, handlePrevious}) => {
   return (
-    <div className='signWrap'>
-      <div className="signProcess">
-        <ul>
-          <li className='done'>
-            <i class='bx bx-user'></i>
-          </li>
-          <li className='active'>
-            <i class='bx bxs-school'></i>
-          </li>
-          <li>
-            <i class='bx bx-credit-card'></i>
-          </li>
-        </ul>
-      </div>
+    <>
       <h1 className="userHeader">Education information</h1>
   
       <form>
@@ -44,17 +31,20 @@ const EducationInformation = () => {
         <section>
           <h2>Diploma file</h2>
           <div className='fileUpload'>
-            <i class='bx bx-cloud-upload' ></i>
-            <p><div className='mobileDisplayNone'>Drag or </div>upload your diploma file here</p>
+            <i className='bx bx-cloud-upload' ></i>
+            <p><span className='mobileDisplayNone'>Drag or </span>upload your diploma file here</p>
             <input 
               type="file"
             />
           </div>
         </section>
 
-        <button>Continue</button>
+        <div className='buttons'>
+          <button type='button' onClick={handlePrevious}>Previous</button>
+          <button type='button' onClick={handleNext}>Continue</button>
+        </div>
       </form>
-    </div>
+    </>
   )
 }
 

@@ -2,22 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import CountrySelector from './inputs/CountrySelector'
 
-const ProfileInformation = () => {
+const ProfileInformation = ({handleNext}) => {
   return (
-    <div className='signWrap'>
-      <div className="signProcess">
-        <ul>
-          <li className='active'>
-            <i class='bx bx-user'></i>
-          </li>
-          <li>
-            <i class='bx bxs-school' ></i>
-          </li>
-          <li>
-            <i class='bx bx-credit-card' ></i>
-          </li>
-        </ul>
-      </div>
+    <>
       <h1 className="userHeader">Profile information</h1>
   
       <form>
@@ -138,9 +125,12 @@ const ProfileInformation = () => {
           <label htmlFor="noStudent"><span>By signing up, I agree to <Link to="/">ICN’s Privacy Policy.</Link></span></label>
         </div>
 
-        <button>Continue</button>
+        <div className='buttons'>
+          <Link to="/tutors/sign-up">Previous</Link>
+          <button type='button' onClick={handleNext}>Continue</button>
+        </div>
       </form>
-    </div>
+    </>
   )
 }
 

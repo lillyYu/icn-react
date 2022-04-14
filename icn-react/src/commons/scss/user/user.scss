@@ -145,6 +145,34 @@ h1.userHeader {
         text-align: center;
       }
 
+      .buttons {
+        @include flexCenterBetween();
+        width: 100%;
+        margin-top: 4rem;
+        gap: 0 1.2rem;
+
+        &>* {
+          flex: 1;
+          display: block;
+          padding: 1.4rem 2rem;
+          color: white;
+          border-radius: 1.2rem;
+          background-color: $point-blue-color;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          text-align: center;
+
+          &:first-child {
+            background-color: $grey-font-color;
+          }
+
+          &:last-child {
+            background-color: $point-blue-color;
+          }
+        }
+
+      }
+
       section {
         margin-bottom: 4rem;
 

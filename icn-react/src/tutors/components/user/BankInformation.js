@@ -1,21 +1,8 @@
 import React from 'react'
 
-const BankInformation = () => {
+const BankInformation = ({handlePrevious}) => {
   return (
-    <div className='signWrap'>
-      <div className="signProcess">
-        <ul>
-          <li className='done'>
-            <i class='bx bx-user'></i>
-          </li>
-          <li className='done'>
-            <i class='bx bxs-school'></i>
-          </li>
-          <li className='active'>
-            <i class='bx bx-credit-card'></i>
-          </li>
-        </ul>
-      </div>
+    <>
       <h1 className="userHeader">Bank information</h1>
   
       <form>
@@ -59,9 +46,12 @@ const BankInformation = () => {
           </div>
         </section>
 
-        <button>Sign up</button>
+        <div className='buttons'>
+          <button type='button' onClick={handlePrevious}>Previous</button>
+          <button type='button'>Done</button>
+        </div>
       </form>
-    </div>
+    </>
   )
 }
 
