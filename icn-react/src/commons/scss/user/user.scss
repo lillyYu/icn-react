@@ -33,7 +33,7 @@ h1.userHeader {
           width: 5.2rem;
           height: 5.2rem;
           border-radius: 50%;
-          background-color: #EFEFEF;
+          background-color: $dark-white-color;
 
           &:nth-of-type(1) {
             &::after {
