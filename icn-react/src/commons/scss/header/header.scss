@@ -11,6 +11,35 @@
     @include flexCenterBetween();
     width: 100%;
     height: 100%;
+
+    .profileStyling{
+      @include flexAlignCenter();
+
+      ul {
+        @include flexAlignCenter();
+        margin-left: 3.5rem;
+        gap: 0 0.8rem;
+        
+        li {
+          figure{
+            @include imageAlignCenter();
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            border: 1px solid $point-blue-color;
+          }
+
+          &:nth-child(2) {
+            font-weight: $bold-font-weight;
+          }
+          &:nth-child(3) {
+            i {
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
   }
 
   .headerLeft {
