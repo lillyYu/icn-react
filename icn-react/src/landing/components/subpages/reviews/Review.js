@@ -1,5 +1,5 @@
 import banner from 'commons/images/sub-banner3.jpg'
-import StudentReviews from 'students/components/subpages/what-is/StudentReviews';
+import StudentReviews from 'landing/components/subpages/what-is/StudentReviews';
 import RecommendReviews from './RecommendReviews';
 
 export const Review =() => {

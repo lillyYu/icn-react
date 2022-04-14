@@ -13,7 +13,7 @@ export const Footer = () => {
             <p>
               The most complete online learning solution
             </p>
-            <Link to='/students/sign-up' className="whiteButton">Sign up now</Link>
+            <Link to='/sign-up' className="whiteButton">Sign up now</Link>
           </div>
   
           <div className="footerRight">

@@ -80,7 +80,7 @@ const ContentDetail = () => {
                     contents.map((content, index) => {
                       return(
                         <div key={index} className="contentItemWrap">
-                          <Link to={`/students/class/${content.title}`}>
+                          <Link to={`/class/${content.title}`}>
                             <ContentItem
                               id={content.id}
                               thumbnail={content.thumbnail}
@@ -192,7 +192,7 @@ const ContentDetail = () => {
                       contents.map((content, index) => {
                         return(
                           <div key={index} className="contentItemWrap">
-                            <Link to={`/students/class/${content.title}`}>
+                            <Link to={`/class/${content.title}`}>
                               <ContentItem
                                 id={content.id}
                                 thumbnail={content.thumbnail}

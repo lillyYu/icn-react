@@ -51,7 +51,9 @@ footer {
               font-size: 2rem;
             }
 
-            div {
+            div,
+            a {
+              display: block;
               margin-bottom: 2rem;
               font-size: 1.4rem;
               font-weight: $normal-font-weight;

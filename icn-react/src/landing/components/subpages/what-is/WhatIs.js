@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "students/components/scss/subpages/subpages.scss"
+import "landing/components/scss/subpages/subpages.scss"
 import banner from 'commons/images/sub-banner1.jpg'
 
 import OurService from "./OurService";

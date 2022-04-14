@@ -14,7 +14,7 @@ export const Footer = () => {
             <p>
               The most complete online learning solution
             </p>
-            <Link to='/students/sign-up' className="whiteButton">Sign up now</Link>
+            <Link to='/sign-up' className="whiteButton">Sign up now</Link>
           </div>
   
           <div className="footerRight">
@@ -36,7 +36,7 @@ export const Footer = () => {
               <li>
                 <section>
                   <span>Tutor</span>
-                  <div>Become a tutor</div>
+                  <Link to="/tutors/">Become a tutor</Link>
                 </section>
                 <section>
                   <span>Career</span>

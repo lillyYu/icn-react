@@ -6,15 +6,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 import TutorIndex from "tutors/TutorIndex";
 import StudentIndex from "students/StudentIndex";
-import Links from "Links";
 import 'tutors/components/scss/subpages/subpages.scss'
+import LandingIndex from "landing/LandingIndex";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Links />} />
+          <Route path="/*" element={<LandingIndex />} />
           <Route path="/students/*" element={<StudentIndex />} />
           <Route path="/tutors/*" element={<TutorIndex />} />
         </Routes>

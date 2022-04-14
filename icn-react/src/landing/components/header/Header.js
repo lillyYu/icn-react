@@ -22,7 +22,7 @@ export const Header = () => {
         <header className="webHeader">
           <div className="webHeaderWrap">
             <div className="headerLeft">
-              <Link to="/students" className="active">
+              <Link to="/" className="active">
                 <img src={logoImg} alt="ICN 로고 이미지"/>
               </Link>
     
@@ -35,12 +35,12 @@ export const Header = () => {
 
       <Mobile>
         <header className="mobileHeader">
-          <Link to="/students" className="active">
+          <Link to="/" className="active">
             <img src={logoImg} alt="ICN 로고 이미지"/>
           </Link>
   
           <div className="mobileHeaderRight">
-            <Link to="/students/sign-up">Sign up</Link>
+            <Link to="/sign-up">Sign up</Link>
   
             <div className={hamburger ? "hamburger active" : "hamburger"} onClick={handleHamburgerCick}>
               <span></span>
