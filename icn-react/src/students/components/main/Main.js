@@ -1,4 +1,9 @@
+import { ContentItem } from 'commons/items/content-item/ContentItem';
+import { Link } from 'react-router-dom';
 import 'students/components/scss/main/main.scss';
+import contents from 'commons/items/content-item/contents.json'
+import tutors from 'commons/items/tutor-item/tutors.json';
+import { TutorItem } from 'commons/items/tutor-item/TutorItem';
 
 const Main = () => {
   return (
@@ -49,7 +54,66 @@ const Main = () => {
         </aside>
 
         <main>
+          <section>
+            <h2 className="sectionTitle">
+              <span>Daily Brief</span>
+              <Link to="">See all
+                <span className="material-icons">navigate_next</span>
+              </Link>
+            </h2>
 
+            <div className='contentsWrap'>
+              {
+                contents.slice(0,2).map((content, index) => {
+                  return(
+                    <div key={index} className="contentItemWrap">
+                      <Link to={`/class/${content.title}`}>
+                        <ContentItem
+                          id={content.id}
+                          thumbnail={content.thumbnail}
+                          // tags={content.tags}
+                          title={content.title}
+                          profile={content.profile}
+                          tutorName={content.tutorName}
+                          university={content.university}
+                        />
+                      </Link>
+                    </div>
+                    )
+                  }
+                )
+              }
+            </div>
+          </section>
+
+          <section>
+            <h2 className="sectionTitle">
+              <span>Recommend Tutors</span>
+              <Link to="">See all
+                <span className="material-icons">navigate_next</span>
+              </Link>
+            </h2>
+
+            <div>
+              {
+                tutors.slice(0,3).map((tutor, index) => {
+                  return(
+                    <TutorItem 
+                      id={tutor.id}
+                      business={tutor.tags[0].name}
+                      education={tutor.tags[1].name}
+                      profile={tutor.profile}
+                      tutorName={tutor.tutorName}
+                      university={tutor.university}
+                      rate={tutor.rate}
+                      rateNum={tutor.rateNum}
+                    />
+                    )
+                  }
+                )
+              }
+            </div>
+          </section>
         </main>
       </div>
     </div>

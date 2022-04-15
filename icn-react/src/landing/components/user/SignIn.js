@@ -31,7 +31,7 @@ export const SignIn = () => {
             <Link to="/find-password">Forgot Password?</Link>
           </div>
   
-          <button>Sign in</button>
+          <Link to="/students" className="nextButton">Sign in</Link>
         </form>
   
         <div className="signInWith">
