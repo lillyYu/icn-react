@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import CountrySelector from './inputs/CountrySelector'
+import CountrySelector from '../CountrySelector'
 
 const ProfileInformation = ({handleNext}) => {
   return (

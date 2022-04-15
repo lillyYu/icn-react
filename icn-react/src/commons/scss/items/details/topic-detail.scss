@@ -6,40 +6,6 @@
 
   .topicDetailWrap {
     @include webMargin();
-
-    .breadcrumbs {
-      @include flexCenterBetween();
-      margin: 2rem 0 3.2rem;
-
-      a {
-        color: $grey-font-color;
-
-        i {
-          margin-right: 1.5rem;
-        }
-      }
-
-      nav {
-        color: $grey-font-color;
-
-        i {
-          &:first-of-type {
-            margin-right: 1rem;
-            color: $point-blue-color;
-          }
-
-          &:nth-of-type(2) {
-            margin-inline: 1.5rem;
-          }
-        }
-
-        span {
-          &:nth-of-type(2) {
-            color: $light-grey-color;
-          }
-        }
-      }
-    }
   }
 
   article {

@@ -40,15 +40,16 @@
       }
     }
   }
-
 }
 
 // input styling
-.checkboxWrap {
+.checkboxWrap,
+.radioWrap {
   @include flexAlignCenter();
   gap: 0 1.2rem;
 
-  input[type="checkbox"] {
+  input[type="checkbox"],
+  input[type="radio"] {
     display: none;
 
     &+label {
@@ -81,9 +82,22 @@
         top: 0;
       }
     }
-
   }
 
+  input[type="radio"] {
+    &+label {
+      &::before {
+        background: url(../images/radio.svg);
+      }
+    }
+    &:checked+label {
+      &::before {
+        content: '';
+        background: url(../images/radio-checked.svg);
+        top: 0;
+      }
+    }
+  }
 }
 
 .inputLabel {
@@ -132,7 +146,7 @@
     display: flex;
 
     input {
-      border-radius: 0.8rem 0px 0px 0.8rem ;
+      border-radius: 0.8rem 0px 0px 0.8rem;
     }
 
     button {
@@ -151,6 +165,183 @@
       }
     }
   }
+}
+
+.processStyling {
+  max-width: 50rem;
+  width: 100%;
+  margin: 5.6rem auto;
+
+  ul {
+    @include flexCenterBetween();
+
+    li {
+      @include alignCenter();
+      position: relative;
+      width: 5.2rem;
+      height: 5.2rem;
+      border-radius: 50%;
+      background-color: $dark-white-color;
+
+      span {
+        display: block;
+        position: absolute;
+        bottom: -3rem;
+        width: fit-content;
+        text-align: center;
+        white-space:nowrap;
+      }
+
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        &::before {
+          content: '';
+          position: absolute;
+          width: 17.2rem;
+          height: 2px;
+          background-color: $input-border-color;
+          top: 50%;
+          left: 5rem;
+          z-index: -1;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        font-size: 1.6rem;
+        bottom: -3rem;
+        width: 12rem;
+        text-align: center;
+      }
+
+      i {
+        font-size: 3.2rem;
+        color: $light-grey-color;
+      }
+
+      &.active {
+        background-color: $point-blue-color;
+
+        i {
+          color: white;
+        }
+      }
+
+      &.done {
+        background-color: #EDF4FF;
+        border: 2px solid $point-blue-color;
+
+        &::before {
+          background-color: $point-blue-color
+        }
+
+        i {
+          color: $point-blue-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width:1023) {
+  .processStyling {
+    ul {
+      li {
+
+        &:nth-of-type(1),
+        &:nth-of-type(2) {
+          &::before {
+            width: 15rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .processStyling {
+    ul {
+      li {
+
+        &:nth-of-type(1),
+        &:nth-of-type(2) {
+          &::before {
+            width: 12rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .processStyling {
+    padding: 0 3%;
+  }
+}
+
+
+.breadcrumbs {
+  @include flexCenterBetween();
+  margin: 2rem 0 3.2rem;
+
+  a {
+    color: $grey-font-color;
+
+    i {
+      margin-right: 1.5rem;
+    }
+  }
+
+  nav {
+    color: $grey-font-color;
+
+    i {
+      &:first-of-type {
+        margin-right: 1rem;
+        color: $point-blue-color;
+      }
+
+      &:nth-of-type(2) {
+        margin-inline: 1.5rem;
+      }
+    }
+
+    span {
+      &:nth-of-type(2) {
+        color: $light-grey-color;
+      }
+    }
+  }
+}
+
+.buttons {
+  @include flexCenterBetween();
+  width: 100%;
+  margin-top: 4rem;
+  gap: 0 1.2rem;
+
+  &>* {
+    flex: 1;
+    display: block;
+    padding: 1.4rem 2rem;
+    color: white;
+    border-radius: 1.2rem;
+    background-color: $point-blue-color;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+
+    &:first-child {
+      background-color: $grey-font-color;
+    }
+
+    &:last-child {
+      background-color: $point-blue-color;
+    }
+  }
+
 }
 
 .fileUpload {

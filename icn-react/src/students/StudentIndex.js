@@ -7,6 +7,8 @@ import Career from './components/subpages/career/Career'
 import Content from './components/subpages/content/Content'
 import OneToOneClass from './components/subpages/one-to-one-class/OneToOneClass'
 import Tutor from './components/subpages/tutor/Tutor'
+import './components/scss/subpages/subpages.scss';
+import ClassRegister from './components/subpages/class-register/ClassRegister'
 
 const StudentIndex = () => {
   return (
@@ -21,6 +23,9 @@ const StudentIndex = () => {
           <Route path="/tutor" element={<Tutor />} />
           <Route path="/content" element={<Content />} />
           <Route path="/career" element={<Career />} />
+
+          {/* detail pages */}
+          <Route path="/class-register" element={<ClassRegister />} />
         </Routes>
       </div>
 

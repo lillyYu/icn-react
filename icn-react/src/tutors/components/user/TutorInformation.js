@@ -1,7 +1,8 @@
+import ProcessItem from 'commons/items/process-item/ProcessItem'
 import React, { useState } from 'react'
-import BankInformation from './BankInformation'
-import EducationInformation from './EducationInformation'
-import ProfileInformation from './ProfileInformation'
+import BankInformation from './inputs/sign-steps/BankInformation'
+import EducationInformation from './inputs/sign-steps/EducationInformation'
+import ProfileInformation from './inputs/sign-steps/ProfileInformation'
 
 const TutorInformation = () => {
   const [currentTab, setCurrentTab] = useState(0);
@@ -35,35 +36,12 @@ const TutorInformation = () => {
     }
   ]
 
-  function stepClass(signStep){
-    if (currentTab === signStep.id){
-      return 'active'
-    } else if (currentTab === signStep.id + 1){
-      return 'done'
-    } else if (currentTab === signStep.id + 2){
-      return 'done'
-    } else {
-      return ''
-    }
-  }
-  
   return (
     <div className='sign'>
       <div className='signWrap'>
-        <div className="signProcess">
-          <ul>
-            {
-              signSteps.map((signStep) => {
-                return(
-                  <li className={stepClass(signStep)} key={signStep.id}>
-                    <i className={`bx ${signStep.icon}`}></i>
-                  </li>
-                )
-              })
-            }
-          </ul>
-        </div>
 
+        <ProcessItem steps={signSteps} currentTab={currentTab} />
+        
         {signSteps[currentTab].content}
       </div>
     </div>

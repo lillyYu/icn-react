@@ -1,0 +1,140 @@
+@import 'commons/scss/var';
+
+.selectContent {
+  &>div {
+    margin: 0 auto 8.4rem;
+
+    h1 {
+      margin: 4.4rem 0 3.6rem;
+      text-align: center;
+      font-size: 3.6rem;
+      line-height: 4.4rem;
+      font-weight: $bold-font-weight;
+    }
+
+    .continueButton {
+      background-color: $point-blue-color;
+      color: white;
+      width: 100%;
+      height: 5.2rem;
+      margin-top: 1.6rem;
+      padding: 1.4rem 0;
+      border-radius: 1.2rem;
+      text-align: center;
+    }
+  }
+
+  .programSelect {
+    width: 55.2rem;
+
+    ul {
+      li {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 1.4rem 2rem;
+        border: 1px solid $input-border-color;
+        border-radius: 0.8rem;
+      }
+    }
+  }
+
+  .contentSelect {
+    width: 55.2rem;
+
+    article {
+      .accordionSection {
+        margin-bottom: 2rem;
+        border: 1px solid $input-border-color;
+        border-radius: 0.8rem;
+        outline: none;
+
+        &.active {
+          border: 1px solid $point-blue-color;
+        }
+
+        .accordion {
+          @include flexAlignCenter();
+          background-color: white;
+          cursor: pointer;
+          padding: 1.4rem 2rem;
+          width: 100%;
+          transition: background-color 0.6s ease;
+
+          .accordionTitle {
+            font-weight: $bold-font-weight;
+          }
+
+          i {
+            font-size: 2rem;
+
+            &.accordionIcon {
+              margin-left: auto;
+              transition: transform 0.5s ease;
+            }
+          }
+        }
+
+        .rotate {
+          transform: rotate(90deg);
+        }
+
+        .accordionContent {
+          background: white;
+          overflow: hidden;
+          transition: max-height 0.3s ease;
+        }
+
+        .accordionText {
+          padding: 0 2rem 2rem 2rem;
+
+          ul {
+            li {
+              margin-bottom: 1.2rem;
+            }
+          }
+
+          button {
+            color: $point-blue-color;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .scheduleSelect {
+
+    article {
+      aside {
+        width: 44.2rem;
+
+        .asideTop {
+          @include flexCenterBetween();
+          padding: 2rem 2.4rem;
+          border: 1px solid $input-border-color;
+
+          h2 {
+            font-size: 2rem;
+            font-weight: $bold-font-weight;
+          }
+
+          input[type="search"] {
+            width: 19rem;
+            padding: 1.2rem 2rem;
+            border: 1px solid $input-border-color;
+            border-radius: 0.8rem;
+
+            &::placeholder {
+              color: $grey-font-color;
+            }
+          }
+        }
+      }
+    }
+
+    .buttons {
+      width: 55.2rem;
+      margin: 0 auto;
+    }
+  }
+}
